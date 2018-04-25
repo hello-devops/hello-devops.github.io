@@ -79,4 +79,5 @@ theme: hueman
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/hello-devops/hello-devops.github.io
+  repo: git@github.com:hello-devops/hello-devops.github.io.git
+  branch: gh-pages
