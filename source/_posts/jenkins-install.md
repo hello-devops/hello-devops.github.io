@@ -8,9 +8,6 @@ tags:
 - ops
 - jenkins
 ---
-[젠킨스 공식 홈페이지
-https://jenkins.io/](https://jenkins.io/)
-
 ## JENKINS
 
 {% codeblock %}
