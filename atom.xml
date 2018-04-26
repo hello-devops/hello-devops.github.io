@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>spOveD</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://spoved.org/"/>
+  <updated>2018-04-26T13:55:06.471Z</updated>
+  <id>http://spoved.org/</id>
+  
+  <author>
+    <name>GyuJung Kim</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Jenkins install</title>
+    <link href="http://spoved.org/2018/04/26/jenkins-install/"/>
+    <id>http://spoved.org/2018/04/26/jenkins-install/</id>
+    <published>2018-04-26T12:13:35.000Z</published>
+    <updated>2018-04-26T13:55:06.471Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://jenkins.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;젠킨스 공식 홈페이지&lt;br&gt;https://jenkins.io/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;JENKINS&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Ops" scheme="http://spoved.org/categories/Ops/"/>
+    
+      <category term="Jenkins" scheme="http://spoved.org/categories/Ops/Jenkins/"/>
+    
+    
+      <category term="ops" scheme="http://spoved.org/tags/ops/"/>
+    
+      <category term="jenkins" scheme="http://spoved.org/tags/jenkins/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>spOveD</title>
+    <link href="http://spoved.org/2018/04/26/spoved/"/>
+    <id>http://spoved.org/2018/04/26/spoved/</id>
+    <published>2018-04-26T11:47:09.524Z</published>
+    <updated>2018-04-26T12:11:39.076Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;개발과 운영에 관한 내용을 정리하려고 만든 사이트입니다.&lt;br&gt;궁금한 부분은 댓글 달아 주시면 아는 내에서
+        
+      
+    
+    </summary>
+    
+    
+      <category term="spoved" scheme="http://spoved.org/tags/spoved/"/>
+    
+  </entry>
+  
+</feed>
