@@ -90,5 +90,5 @@ feed:
   limit: 20
   hub:
   content:
-  content_limit: 140
+  content_limit: 500
   content_limit_delim: ' '
