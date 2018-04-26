@@ -9,18 +9,18 @@
     
         <meta name="keywords" content="ops,jenkins" />
     
-    <meta name="description" content="젠킨스 공식 홈페이지https://jenkins.io/ JENKINS$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo $ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key $">
+    <meta name="description" content="젠킨스 공식 홈페이지https://jenkins.io/ JENKINS123$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo$ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key$">
 <meta name="keywords" content="ops,jenkins">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Jenkins install">
 <meta property="og:url" content="http://spoved.org/2018/04/26/jenkins-install/index.html">
 <meta property="og:site_name" content="spOveD">
-<meta property="og:description" content="젠킨스 공식 홈페이지https://jenkins.io/ JENKINS$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo $ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key $">
+<meta property="og:description" content="젠킨스 공식 홈페이지https://jenkins.io/ JENKINS123$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo$ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key$">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-04-26T13:33:02.916Z">
+<meta property="og:updated_time" content="2018-04-26T13:48:22.332Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jenkins install">
-<meta name="twitter:description" content="젠킨스 공식 홈페이지https://jenkins.io/ JENKINS$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo $ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key $">
+<meta name="twitter:description" content="젠킨스 공식 홈페이지https://jenkins.io/ JENKINS123$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo$ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key$">
     
 
     
@@ -164,47 +164,24 @@
         
         <div class="article-entry" itemprop="articleBody">
             <p><a href="https://jenkins.io/" target="_blank" rel="noopener">젠킨스 공식 홈페이지<br>https://jenkins.io/</a></p>
-<h2 id="JENKINS"><a href="#JENKINS" class="headerlink" title="JENKINS"></a>JENKINS</h2><pre><code>$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
-$ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
-$ sudo yum install jenkins
-</code></pre><blockquote>
+<h2 id="JENKINS"><a href="#JENKINS" class="headerlink" title="JENKINS"></a>JENKINS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo</span><br><span class="line">$ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key</span><br><span class="line">$ sudo yum install jenkins</span><br></pre></td></tr></table></figure>
+<blockquote>
 <p>yum 을 사용하여 설치하면 추후 젠킨스를 업데이트하기 편합니다.</p>
 </blockquote>
 <p><a href="https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions" target="_blank" rel="noopener">Jenkins wiki<br>https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions</a></p>
 <h2 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h2><p>yum 사용<br>이 경우는 보통 구버전의 git이 설치됩니다.</p>
-<pre><code>$ sudo yum install git -y
-</code></pre><p>최신버전을 다운 받아 설치하는 경우</p>
-<pre><code>$ export GIT_VER=2.17.0
-$ wget https://www.kernel.org/pub/software/scm/git/git-$GIT_VER.tar.gz
-$ tar -zxf git-$GIT_VER.tar.gz
-
-$ sudo yum install curl-devel expat-devel gettext-devel openssl-devel perl-devel zlib-devel gcc -y
-
-$ cd git-$GIT_VER
-$ sudo make prefix=/usr all
-$ sudo make prefix=/usr install
-</code></pre><p><a href="https://www.kernel.org/pub/software/scm/git/" target="_blank" rel="noopener">Kernel git<br>https://www.kernel.org/pub/software/scm/git/</a></p>
-<h2 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h2><pre><code>$ yum list java*jdk-devel
-Available Packages
-java-1.6.0-openjdk-devel.x86_64           1:1.6.0.41-1.13.13.1.el7_3           base   
-java-1.7.0-openjdk-devel.x86_64           1:1.7.0.171-2.6.13.0.el7_4           updates
-java-1.8.0-openjdk-devel.i686             1:1.8.0.161-0.b14.el7_4              updates
-java-1.8.0-openjdk-devel.x86_64           1:1.8.0.161-0.b14.el7_4              updates
-</code></pre><p>설치할 JDK 버전 선택하여 설치<br>이 경우는 1.8.0 버전 JDK를 설치</p>
-<pre><code>$ yum install java-1.8.0-openjdk-devel.x86_64 -y
-</code></pre><p>설치된 JDK 확인</p>
-<pre><code>$ ls /usr/lib/jvm | grep java
-java
-java-1.8.0
-java-1.8.0-openjdk
-java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64
-java-openjdk
-</code></pre><p><a href="http://zetawiki.com/wiki/CentOS_JDK_%EC%84%A4%EC%B9%98" target="_blank" rel="noopener">참고자료<br>http://zetawiki.com/wiki/CentOS_JDK_%EC%84%A4%EC%B9%98</a></p>
-<h2 id="GRADLE"><a href="#GRADLE" class="headerlink" title="GRADLE"></a>GRADLE</h2><pre><code>$ sudo yum install zip unzip -y
-$ curl -s https://get.sdkman.io | bash
-$ bash
-$ sdk install gradle 4.7
-</code></pre><p><a href="https://gradle.org/gradle-download/" target="_blank" rel="noopener">Gradle Installation<br>https://gradle.org/gradle-download/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum install git -y</span><br></pre></td></tr></table></figure>
+<p>최신버전을 다운 받아 설치하는 경우</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ export GIT_VER=2.17.0</span><br><span class="line">$ wget https://www.kernel.org/pub/software/scm/git/git-$GIT_VER.tar.gz</span><br><span class="line">$ tar -zxf git-$GIT_VER.tar.gz</span><br><span class="line"></span><br><span class="line">$ sudo yum install curl-devel expat-devel gettext-devel openssl-devel perl-devel zlib-devel gcc -y</span><br><span class="line"></span><br><span class="line">$ cd git-$GIT_VER</span><br><span class="line">$ sudo make prefix=/usr all</span><br><span class="line">$ sudo make prefix=/usr install</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.kernel.org/pub/software/scm/git/" target="_blank" rel="noopener">Kernel git<br>https://www.kernel.org/pub/software/scm/git/</a></p>
+<h2 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ yum list java*jdk-devel</span><br><span class="line">Available Packages</span><br><span class="line">java-1.6.0-openjdk-devel.x86_64           1:1.6.0.41-1.13.13.1.el7_3           base   </span><br><span class="line">java-1.7.0-openjdk-devel.x86_64           1:1.7.0.171-2.6.13.0.el7_4           updates</span><br><span class="line">java-1.8.0-openjdk-devel.i686             1:1.8.0.161-0.b14.el7_4              updates</span><br><span class="line">java-1.8.0-openjdk-devel.x86_64           1:1.8.0.161-0.b14.el7_4              updates</span><br></pre></td></tr></table></figure>
+<p>설치할 JDK 버전 선택하여 설치<br>이 경우는 1.8.0 버전 JDK를 설치</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum install java-1.8.0-openjdk-devel.x86_64 -y</span><br></pre></td></tr></table></figure>
+<p>설치된 JDK 확인</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ ls /usr/lib/jvm | grep java</span><br><span class="line">java</span><br><span class="line">java-1.8.0</span><br><span class="line">java-1.8.0-openjdk</span><br><span class="line">java-1.8.0-openjdk-1.8.0.161-0.b14.el7_4.x86_64</span><br><span class="line">java-openjdk</span><br></pre></td></tr></table></figure>
+<p><a href="http://zetawiki.com/wiki/CentOS_JDK_%EC%84%A4%EC%B9%98" target="_blank" rel="noopener">참고자료<br>http://zetawiki.com/wiki/CentOS_JDK_%EC%84%A4%EC%B9%98</a></p>
+<h2 id="GRADLE"><a href="#GRADLE" class="headerlink" title="GRADLE"></a>GRADLE</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum install zip unzip -y</span><br><span class="line">$ curl -s https://get.sdkman.io | bash</span><br><span class="line">$ bash</span><br><span class="line">$ sdk install gradle 4.7</span><br></pre></td></tr></table></figure>
+<p><a href="https://gradle.org/gradle-download/" target="_blank" rel="noopener">Gradle Installation<br>https://gradle.org/gradle-download/</a></p>
 
         </div>
         <footer class="article-footer">
