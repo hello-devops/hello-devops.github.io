@@ -10,7 +10,7 @@ tags:
 - docker
 - dockerfile
 ---
-## WAR Deploy
+## WAR Deploy (with tomcat)
 
 {% codeblock Dockerfile %}
     FROM       tomcat
