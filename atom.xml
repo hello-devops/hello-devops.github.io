@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spoved.org/"/>
-  <updated>2018-04-27T02:04:28.751Z</updated>
+  <updated>2018-04-27T02:57:05.544Z</updated>
   <id>http://spoved.org/</id>
   
   <author>
@@ -15,6 +15,69 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx install</title>
+    <link href="http://spoved.org/2018/04/27/nginx-install/"/>
+    <id>http://spoved.org/2018/04/27/nginx-install/</id>
+    <published>2018-04-27T02:37:03.000Z</published>
+    <updated>2018-04-27T02:57:05.544Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/nginx/nginx.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;한국-서버가-아닌-경우&quot;&gt;&lt;a href=&quot;#한국-서버가-아닌-경우&quot; class=&quot;headerlink&quot; title=&quot;한국 서버가 아닌 경우&quot;&gt;&lt;/a&gt;한국 서버가 아닌 경우&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;NGINX&quot;&gt;&lt;a href=&quot;#NGINX&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Ops" scheme="http://spoved.org/categories/Ops/"/>
+    
+      <category term="Nginx" scheme="http://spoved.org/categories/Ops/Nginx/"/>
+    
+    
+      <category term="ops" scheme="http://spoved.org/tags/ops/"/>
+    
+      <category term="nginx" scheme="http://spoved.org/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nginx?</title>
+    <link href="http://spoved.org/2018/04/27/nginx-intro/"/>
+    <id>http://spoved.org/2018/04/27/nginx-intro/</id>
+    <published>2018-04-27T02:30:43.000Z</published>
+    <updated>2018-04-27T02:37:30.719Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/nginx/nginx.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;HTTP와 프록시용으로 많이 사용되는 서버.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://nginx.org/en/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;NGINX 공식
+        
+      
+    
+    </summary>
+    
+      <category term="Ops" scheme="http://spoved.org/categories/Ops/"/>
+    
+      <category term="Nginx" scheme="http://spoved.org/categories/Ops/Nginx/"/>
+    
+    
+      <category term="ops" scheme="http://spoved.org/tags/ops/"/>
+    
+      <category term="nginx" scheme="http://spoved.org/tags/nginx/"/>
+    
+  </entry>
   
   <entry>
     <title>Jenkins install</title>
