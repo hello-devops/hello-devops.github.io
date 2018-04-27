@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Nginx Letsencrypt | spOveD</title>
+    <title>NGINX SSL 적용하기 (LetsEncrypt 사용) | spOveD</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="ops,nginx,ssl,letsencrypt" />
     
-    <meta name="description" content="CentOS12$ yum install epel-release$ yum install certbot AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+x certbot-auto$ ./certbot-auto --debug letsencrypt.ini12345678910111213141516171819202122">
+    <meta name="description" content="NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다. Let’s Encrypt CentOS12$ yum install epel-release$ yum install certbot AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+">
 <meta name="keywords" content="ops,nginx,ssl,letsencrypt">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nginx Letsencrypt">
+<meta property="og:title" content="NGINX SSL 적용하기 (LetsEncrypt 사용)">
 <meta property="og:url" content="http://spoved.org/2018/04/27/nginx-letsencrypt/index.html">
 <meta property="og:site_name" content="spOveD">
-<meta property="og:description" content="CentOS12$ yum install epel-release$ yum install certbot AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+x certbot-auto$ ./certbot-auto --debug letsencrypt.ini12345678910111213141516171819202122">
+<meta property="og:description" content="NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다. Let’s Encrypt CentOS12$ yum install epel-release$ yum install certbot AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://spoved.org/images/nginx/letsencrypt-logo-horizontal.svg">
-<meta property="og:updated_time" content="2018-04-27T10:59:35.364Z">
+<meta property="og:updated_time" content="2018-04-27T18:43:35.605Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nginx Letsencrypt">
-<meta name="twitter:description" content="CentOS12$ yum install epel-release$ yum install certbot AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+x certbot-auto$ ./certbot-auto --debug letsencrypt.ini12345678910111213141516171819202122">
+<meta name="twitter:title" content="NGINX SSL 적용하기 (LetsEncrypt 사용)">
+<meta name="twitter:description" content="NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다. Let’s Encrypt CentOS12$ yum install epel-release$ yum install certbot AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+">
 <meta name="twitter:image" content="http://spoved.org/images/nginx/letsencrypt-logo-horizontal.svg">
     
 
@@ -153,7 +153,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-        Nginx Letsencrypt
+        NGINX SSL 적용하기 (LetsEncrypt 사용)
         </h1>
     
 
@@ -179,6 +179,8 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/images/nginx/letsencrypt-logo-horizontal.svg" alt=""></p>
+<p>NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다.</p>
+<p><a href="https://letsencrypt.org/" target="_blank" rel="noopener">Let’s Encrypt</a></p>
 <h2 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ yum install epel-release</span><br><span class="line">$ yum install certbot</span><br></pre></td></tr></table></figure>
 <h2 id="AWS"><a href="#AWS" class="headerlink" title="AWS"></a>AWS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://dl.eff.org/certbot-auto</span><br><span class="line">$ chmod a+x certbot-auto</span><br><span class="line">$ ./certbot-auto --debug</span><br></pre></td></tr></table></figure>
 <h2 id="letsencrypt-ini"><a href="#letsencrypt-ini" class="headerlink" title="letsencrypt.ini"></a>letsencrypt.ini</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">$ cat &lt;&lt;EOT &gt;&gt; letsencrypt-config/ssl.ini</span><br><span class="line"># This is an example of the kind of things you can do in a configuration file.</span><br><span class="line"># All flags used by the client can be configured here. Run Certbot with</span><br><span class="line"># &quot;--help&quot; to learn more about the available options.</span><br><span class="line"></span><br><span class="line"># Use a 4096 bit RSA key instead of 2048</span><br><span class="line">rsa-key-size = 4096</span><br><span class="line"></span><br><span class="line"># Uncomment and update to register with the specified e-mail address</span><br><span class="line">email = </span><br><span class="line"></span><br><span class="line"># Uncomment and update to generate certificates for the specified</span><br><span class="line"># domains.</span><br><span class="line">domains = </span><br><span class="line"></span><br><span class="line"># Uncomment to use a text interface instead of ncurses</span><br><span class="line"># text = True</span><br><span class="line"></span><br><span class="line"># Uncomment to use the standalone authenticator on port 443</span><br><span class="line"># authenticator = standalone</span><br><span class="line"># standalone-supported-challenges = tls-sni-01</span><br><span class="line"></span><br><span class="line"># Uncomment to use the webroot authenticator. Replace webroot-path with the</span><br><span class="line"># path to the public_html / webroot folder being served by your web server.</span><br><span class="line">authenticator = webroot</span><br><span class="line">webroot-path = /usr/share/nginx/html</span><br><span class="line">EOT</span><br></pre></td></tr></table></figure>
@@ -200,7 +202,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://spoved.org/2018/04/27/nginx-letsencrypt/" data-id="cjghyse0x000nogvzty50ais1" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://spoved.org/2018/04/27/nginx-letsencrypt/" data-id="cjgian10a0009vwvza2my9ev3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -285,14 +287,6 @@ ga('send', 'pageview');
             
                 
                 <li>
-                    <a class="social-tooltip" title="copyright" href="//crazyguys.me/" target="_blank">
-                        <i class="icon fa fa-copyright"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
                     <a class="social-tooltip" title="github" href="https://github.com/hello-devops" target="_blank">
                         <i class="icon fa fa-github"></i>
                     </a>
@@ -317,7 +311,7 @@ ga('send', 'pageview');
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            Nginx proxy
+            NGINX 프록시(Proxy) 설정
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
@@ -326,7 +320,7 @@ ga('send', 'pageview');
     
         <a href="/2018/04/27/nginx-install/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Nginx install</p>
+        <p class="article-nav-title">NGINX 설치</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -391,7 +385,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/28/docker-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/docker/brand-full.svg)" alt="Docker" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/docker/brand-full.svg)" alt="도커(Docker)" class="thumbnail-image"></span>
     
     
 </a>
@@ -400,7 +394,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Docker/">Docker</a></p>
-                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">Docker</a></p>
+                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">도커(Docker)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T16:15:11.000Z" itemprop="datePublished">2018-04-28</time></p>
                         </div>
                     </li>
@@ -411,7 +405,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/27/springboot-database/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="Spring Boot database" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="스프링부트(Spring Boot) database 연동" class="thumbnail-image"></span>
     
     
 </a>
@@ -420,7 +414,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">Spring Boot database</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">스프링부트(Spring Boot) database 연동</a></p>
                             <p class="item-date"><time datetime="2018-04-27T14:34:29.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -431,7 +425,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/27/springboot-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/spring/springboot.png)" alt="Spring Boot" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/spring/springboot.png)" alt="스프링부트(Spring Boot)" class="thumbnail-image"></span>
     
     
 </a>
@@ -440,7 +434,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">Spring Boot</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">스프링부트(Spring Boot)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T13:45:01.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -495,6 +489,10 @@ ga('send', 'pageview');
         <h3 class="widget-title">links</h3>
         <div class="widget">
             <ul>
+                
+                    <li>
+                        <a href="//crazyguys.me">CRAZYGUYS</a>
+                    </li>
                 
             </ul>
         </div>

@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Spring Boot database | spOveD</title>
+    <title>스프링부트(Spring Boot) database 연동 | spOveD</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="dev,springboot,database" />
     
-    <meta name="description" content="MySQL 연동 build.gradle1234compile(&amp;apos;org.springframework.boot:spring-boot-starter-data-jpa&amp;apos;)// https://mvnrepository.com/artifact/mysql/mysql-connector-javaruntime group: &amp;apos;mysql&amp;apos;, nam">
+    <meta name="description" content="스프링부트와 데이터베이스를 연동하는 방법입니다.MySQL, MariaDB, AuroraDB 의 경우 동일하게 사용 가능합니다. MySQL 연동 build.gradle1234compile(&amp;apos;org.springframework.boot:spring-boot-starter-data-jpa&amp;apos;)// https://mvnrepository.com/a">
 <meta name="keywords" content="dev,springboot,database">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spring Boot database">
+<meta property="og:title" content="스프링부트(Spring Boot) database 연동">
 <meta property="og:url" content="http://spoved.org/2018/04/27/springboot-database/index.html">
 <meta property="og:site_name" content="spOveD">
-<meta property="og:description" content="MySQL 연동 build.gradle1234compile(&amp;apos;org.springframework.boot:spring-boot-starter-data-jpa&amp;apos;)// https://mvnrepository.com/artifact/mysql/mysql-connector-javaruntime group: &amp;apos;mysql&amp;apos;, nam">
+<meta property="og:description" content="스프링부트와 데이터베이스를 연동하는 방법입니다.MySQL, MariaDB, AuroraDB 의 경우 동일하게 사용 가능합니다. MySQL 연동 build.gradle1234compile(&amp;apos;org.springframework.boot:spring-boot-starter-data-jpa&amp;apos;)// https://mvnrepository.com/a">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://spoved.org/images/mysql/mysql-logo.svg">
-<meta property="og:updated_time" content="2018-04-27T15:03:08.285Z">
+<meta property="og:updated_time" content="2018-04-27T18:47:06.775Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spring Boot database">
-<meta name="twitter:description" content="MySQL 연동 build.gradle1234compile(&amp;apos;org.springframework.boot:spring-boot-starter-data-jpa&amp;apos;)// https://mvnrepository.com/artifact/mysql/mysql-connector-javaruntime group: &amp;apos;mysql&amp;apos;, nam">
+<meta name="twitter:title" content="스프링부트(Spring Boot) database 연동">
+<meta name="twitter:description" content="스프링부트와 데이터베이스를 연동하는 방법입니다.MySQL, MariaDB, AuroraDB 의 경우 동일하게 사용 가능합니다. MySQL 연동 build.gradle1234compile(&amp;apos;org.springframework.boot:spring-boot-starter-data-jpa&amp;apos;)// https://mvnrepository.com/a">
 <meta name="twitter:image" content="http://spoved.org/images/mysql/mysql-logo.svg">
     
 
@@ -153,7 +153,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-        Spring Boot database
+        스프링부트(Spring Boot) database 연동
         </h1>
     
 
@@ -178,7 +178,8 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h2 id="MySQL-연동"><a href="#MySQL-연동" class="headerlink" title="MySQL 연동"></a>MySQL 연동</h2><p><img src="/images/mysql/mysql-logo.svg" alt=""></p>
+            <p>스프링부트와 데이터베이스를 연동하는 방법입니다.<br>MySQL, MariaDB, AuroraDB 의 경우 동일하게 사용 가능합니다.</p>
+<h2 id="MySQL-연동"><a href="#MySQL-연동" class="headerlink" title="MySQL 연동"></a>MySQL 연동</h2><p><img src="/images/mysql/mysql-logo.svg" alt=""></p>
 <figure class="highlight plain"><figcaption><span>build.gradle</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">compile(&apos;org.springframework.boot:spring-boot-starter-data-jpa&apos;)</span><br><span class="line"></span><br><span class="line">// https://mvnrepository.com/artifact/mysql/mysql-connector-java</span><br><span class="line">runtime group: &apos;mysql&apos;, name: &apos;mysql-connector-java&apos;, version: &apos;6.0.6&apos;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><figcaption><span>application.properties</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">spring.jpa.show-sql=true</span><br><span class="line">spring.datasource.url=jdbc:mysql://127.0.0.1:3306/databasename?useUnicode=true&amp;charaterEncoding=utf-8&amp;useSSL=false</span><br><span class="line">spring.datasource.username=</span><br><span class="line">spring.datasource.password=</span><br><span class="line">spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver</span><br><span class="line">spring.datasource.testOnBorrow=true</span><br><span class="line">spring.datasource.validationQuery=SELECT 1</span><br><span class="line">spring.jpa.hibernate.use-new-id-generator-mappings=false</span><br><span class="line">spring.messages.basename=Resources</span><br><span class="line">spring.messages.encoding=UTF-8</span><br><span class="line">spring.jpa.database-platform=org.hibernate.dialect.MySQL5Dialect</span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><figcaption><span>User.java</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Entity</span></span><br><span class="line"><span class="meta">@Table</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Id</span></span><br><span class="line">    <span class="meta">@GeneratedValue</span></span><br><span class="line">    Long id;</span><br><span class="line">    String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -191,7 +192,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://spoved.org/2018/04/27/springboot-database/" data-id="cjgi262qu000dz0vzkyrkd27a" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://spoved.org/2018/04/27/springboot-database/" data-id="cjgian10k000nvwvz48hrm3df" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -276,14 +277,6 @@ ga('send', 'pageview');
             
                 
                 <li>
-                    <a class="social-tooltip" title="copyright" href="//crazyguys.me/" target="_blank">
-                        <i class="icon fa fa-copyright"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
                     <a class="social-tooltip" title="github" href="https://github.com/hello-devops" target="_blank">
                         <i class="icon fa fa-github"></i>
                     </a>
@@ -308,7 +301,7 @@ ga('send', 'pageview');
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            Docker
+            도커(Docker)
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
@@ -317,7 +310,7 @@ ga('send', 'pageview');
     
         <a href="/2018/04/27/springboot-intro/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Spring Boot</p>
+        <p class="article-nav-title">스프링부트(Spring Boot)</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -382,7 +375,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/28/docker-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/docker/brand-full.svg)" alt="Docker" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/docker/brand-full.svg)" alt="도커(Docker)" class="thumbnail-image"></span>
     
     
 </a>
@@ -391,7 +384,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Docker/">Docker</a></p>
-                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">Docker</a></p>
+                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">도커(Docker)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T16:15:11.000Z" itemprop="datePublished">2018-04-28</time></p>
                         </div>
                     </li>
@@ -402,7 +395,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/27/springboot-database/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="Spring Boot database" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="스프링부트(Spring Boot) database 연동" class="thumbnail-image"></span>
     
     
 </a>
@@ -411,7 +404,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">Spring Boot database</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">스프링부트(Spring Boot) database 연동</a></p>
                             <p class="item-date"><time datetime="2018-04-27T14:34:29.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -422,7 +415,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/27/springboot-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/spring/springboot.png)" alt="Spring Boot" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/spring/springboot.png)" alt="스프링부트(Spring Boot)" class="thumbnail-image"></span>
     
     
 </a>
@@ -431,7 +424,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">Spring Boot</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">스프링부트(Spring Boot)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T13:45:01.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -486,6 +479,10 @@ ga('send', 'pageview');
         <h3 class="widget-title">links</h3>
         <div class="widget">
             <ul>
+                
+                    <li>
+                        <a href="//crazyguys.me">CRAZYGUYS</a>
+                    </li>
                 
             </ul>
         </div>

@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Nginx proxy | spOveD</title>
+    <title>NGINX 프록시(Proxy) 설정 | spOveD</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="ops,nginx" />
     
-    <meta name="description" content="프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  server_name ;  location / &amp;#123;    proxy_set_header Host \$http_host;    proxy_set_he">
+    <meta name="description" content="NGINX를 이용하여 프록시 설정을 하는 방법입니다.보통 뒤에 톰캣 등의 서버를 물리고 SSL 설정을 해주거나 혹은 L4의 대용으로 사용이 가능합니다. 프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  s">
 <meta name="keywords" content="ops,nginx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nginx proxy">
+<meta property="og:title" content="NGINX 프록시(Proxy) 설정">
 <meta property="og:url" content="http://spoved.org/2018/04/27/nginx-proxy/index.html">
 <meta property="og:site_name" content="spOveD">
-<meta property="og:description" content="프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  server_name ;  location / &amp;#123;    proxy_set_header Host \$http_host;    proxy_set_he">
+<meta property="og:description" content="NGINX를 이용하여 프록시 설정을 하는 방법입니다.보통 뒤에 톰캣 등의 서버를 물리고 SSL 설정을 해주거나 혹은 L4의 대용으로 사용이 가능합니다. 프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  s">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://spoved.org/images/nginx/nginx.png">
-<meta property="og:updated_time" content="2018-04-27T13:21:32.998Z">
+<meta property="og:updated_time" content="2018-04-27T18:45:39.223Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nginx proxy">
-<meta name="twitter:description" content="프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  server_name ;  location / &amp;#123;    proxy_set_header Host \$http_host;    proxy_set_he">
+<meta name="twitter:title" content="NGINX 프록시(Proxy) 설정">
+<meta name="twitter:description" content="NGINX를 이용하여 프록시 설정을 하는 방법입니다.보통 뒤에 톰캣 등의 서버를 물리고 SSL 설정을 해주거나 혹은 L4의 대용으로 사용이 가능합니다. 프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  s">
 <meta name="twitter:image" content="http://spoved.org/images/nginx/nginx.png">
     
 
@@ -153,7 +153,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-        Nginx proxy
+        NGINX 프록시(Proxy) 설정
         </h1>
     
 
@@ -179,6 +179,7 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/images/nginx/nginx.png" alt=""></p>
+<p>NGINX를 이용하여 프록시 설정을 하는 방법입니다.<br>보통 뒤에 톰캣 등의 서버를 물리고 SSL 설정을 해주거나 혹은 L4의 대용으로 사용이 가능합니다.</p>
 <h2 id="프록시"><a href="#프록시" class="headerlink" title="프록시"></a>프록시</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">upstream backed &#123;</span><br><span class="line">  ip_hash;</span><br><span class="line">  server localhost:8080;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  server_name ;</span><br><span class="line">  location / &#123;</span><br><span class="line">    proxy_set_header Host \$http_host;</span><br><span class="line">    proxy_set_header X-Real-IP \$remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_pass http://backend;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>server_name은 내용은 상황에 맞게</p>
 <h2 id="프록시-SSL"><a href="#프록시-SSL" class="headerlink" title="프록시 + SSL"></a>프록시 + SSL</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">upstream backed &#123;</span><br><span class="line">  ip_hash;</span><br><span class="line">  server localhost:8080;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  server_name ;</span><br><span class="line">  return 301 https://\$host\$request_uri;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 443 ssl;</span><br><span class="line">  server_name ;</span><br><span class="line">  ssl_certificate /etc/letsencrypt/live//fullchain.pem;</span><br><span class="line">  ssl_certificate_key /etc/letsencrypt/live//privkey.pem;</span><br><span class="line"></span><br><span class="line">  location / &#123;</span><br><span class="line">    proxy_set_header Host \$http_host;</span><br><span class="line">    proxy_set_header X-Real-IP \$remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_pass http://backend;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -196,7 +197,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://spoved.org/2018/04/27/nginx-proxy/" data-id="cjghyse0v000logvzitamdxp0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://spoved.org/2018/04/27/nginx-proxy/" data-id="cjgian10b000avwvzu1nruryj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -281,14 +282,6 @@ ga('send', 'pageview');
             
                 
                 <li>
-                    <a class="social-tooltip" title="copyright" href="//crazyguys.me/" target="_blank">
-                        <i class="icon fa fa-copyright"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
                     <a class="social-tooltip" title="github" href="https://github.com/hello-devops" target="_blank">
                         <i class="icon fa fa-github"></i>
                     </a>
@@ -313,7 +306,7 @@ ga('send', 'pageview');
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            Spring Boot
+            스프링부트(Spring Boot)
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
@@ -322,7 +315,7 @@ ga('send', 'pageview');
     
         <a href="/2018/04/27/nginx-letsencrypt/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Nginx Letsencrypt</p>
+        <p class="article-nav-title">NGINX SSL 적용하기 (LetsEncrypt 사용)</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -387,7 +380,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/28/docker-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/docker/brand-full.svg)" alt="Docker" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/docker/brand-full.svg)" alt="도커(Docker)" class="thumbnail-image"></span>
     
     
 </a>
@@ -396,7 +389,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Docker/">Docker</a></p>
-                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">Docker</a></p>
+                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">도커(Docker)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T16:15:11.000Z" itemprop="datePublished">2018-04-28</time></p>
                         </div>
                     </li>
@@ -407,7 +400,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/27/springboot-database/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="Spring Boot database" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="스프링부트(Spring Boot) database 연동" class="thumbnail-image"></span>
     
     
 </a>
@@ -416,7 +409,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">Spring Boot database</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">스프링부트(Spring Boot) database 연동</a></p>
                             <p class="item-date"><time datetime="2018-04-27T14:34:29.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -427,7 +420,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/27/springboot-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/spring/springboot.png)" alt="Spring Boot" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/spring/springboot.png)" alt="스프링부트(Spring Boot)" class="thumbnail-image"></span>
     
     
 </a>
@@ -436,7 +429,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">Spring Boot</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">스프링부트(Spring Boot)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T13:45:01.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -491,6 +484,10 @@ ga('send', 'pageview');
         <h3 class="widget-title">links</h3>
         <div class="widget">
             <ul>
+                
+                    <li>
+                        <a href="//crazyguys.me">CRAZYGUYS</a>
+                    </li>
                 
             </ul>
         </div>

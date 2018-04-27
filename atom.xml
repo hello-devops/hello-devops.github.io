@@ -85,11 +85,11 @@
   </entry>
   
   <entry>
-    <title>Docker</title>
+    <title>도커(Docker)</title>
     <link href="http://spoved.org/2018/04/28/docker-intro/"/>
     <id>http://spoved.org/2018/04/28/docker-intro/</id>
     <published>2018-04-27T16:15:11.000Z</published>
-    <updated>2018-04-27T17:25:09.986Z</updated>
+    <updated>2018-04-27T18:47:58.256Z</updated>
     
     <summary type="html">
     
@@ -121,11 +121,11 @@
   </entry>
   
   <entry>
-    <title>Spring Boot database</title>
+    <title>스프링부트(Spring Boot) database 연동</title>
     <link href="http://spoved.org/2018/04/27/springboot-database/"/>
     <id>http://spoved.org/2018/04/27/springboot-database/</id>
     <published>2018-04-27T14:34:29.000Z</published>
-    <updated>2018-04-27T15:03:08.285Z</updated>
+    <updated>2018-04-27T18:47:06.775Z</updated>
     
     <summary type="html">
     
@@ -133,8 +133,9 @@
       
         
         
-          &lt;h2 id=&quot;MySQL-연동&quot;&gt;&lt;a href=&quot;#MySQL-연동&quot; class=&quot;headerlink&quot; title=&quot;MySQL 연동&quot;&gt;&lt;/a&gt;MySQL 연동&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/mysql/mysql-logo.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;build.gradle&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span
+          &lt;p&gt;스프링부트와 데이터베이스를 연동하는 방법입니다.&lt;br&gt;MySQL, MariaDB, AuroraDB 의 경우 동일하게 사용 가능합니다.&lt;/p&gt;
+&lt;h2 id=&quot;MySQL-연동&quot;&gt;&lt;a href=&quot;#MySQL-연동&quot; class=&quot;headerlink&quot; title=&quot;MySQL 연동&quot;&gt;&lt;/a&gt;MySQL 연동&lt;/h2&gt;&lt;p&gt;&lt;img src=&quot;/images/mysql/mysql-logo.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;build.gradle&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td
         
       
     
@@ -154,11 +155,11 @@
   </entry>
   
   <entry>
-    <title>Spring Boot</title>
+    <title>스프링부트(Spring Boot)</title>
     <link href="http://spoved.org/2018/04/27/springboot-intro/"/>
     <id>http://spoved.org/2018/04/27/springboot-intro/</id>
     <published>2018-04-27T13:45:01.000Z</published>
-    <updated>2018-04-27T14:31:25.290Z</updated>
+    <updated>2018-04-27T18:47:37.672Z</updated>
     
     <summary type="html">
     
@@ -192,11 +193,11 @@
   </entry>
   
   <entry>
-    <title>Nginx proxy</title>
+    <title>NGINX 프록시(Proxy) 설정</title>
     <link href="http://spoved.org/2018/04/27/nginx-proxy/"/>
     <id>http://spoved.org/2018/04/27/nginx-proxy/</id>
     <published>2018-04-27T11:05:23.000Z</published>
-    <updated>2018-04-27T13:21:32.998Z</updated>
+    <updated>2018-04-27T18:45:39.223Z</updated>
     
     <summary type="html">
     
@@ -205,7 +206,8 @@
         
         
           &lt;p&gt;&lt;img src=&quot;/images/nginx/nginx.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;프록시&quot;&gt;&lt;a href=&quot;#프록시&quot; class=&quot;headerlink&quot; title=&quot;프록시&quot;&gt;&lt;/a&gt;프록시&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span
+&lt;p&gt;NGINX를 이용하여 프록시 설정을 하는 방법입니다.&lt;br&gt;보통 뒤에 톰캣 등의 서버를 물리고 SSL 설정을 해주거나 혹은 L4의 대용으로 사용이 가능합니다.&lt;/p&gt;
+&lt;h2 id=&quot;프록시&quot;&gt;&lt;a href=&quot;#프록시&quot; class=&quot;headerlink&quot; title=&quot;프록시&quot;&gt;&lt;/a&gt;프록시&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span
         
       
     
@@ -223,11 +225,11 @@
   </entry>
   
   <entry>
-    <title>Nginx Letsencrypt</title>
+    <title>NGINX SSL 적용하기 (LetsEncrypt 사용)</title>
     <link href="http://spoved.org/2018/04/27/nginx-letsencrypt/"/>
     <id>http://spoved.org/2018/04/27/nginx-letsencrypt/</id>
     <published>2018-04-27T03:00:08.000Z</published>
-    <updated>2018-04-27T10:59:35.364Z</updated>
+    <updated>2018-04-27T18:43:35.605Z</updated>
     
     <summary type="html">
     
@@ -236,8 +238,9 @@
         
         
           &lt;p&gt;&lt;img src=&quot;/images/nginx/letsencrypt-logo-horizontal.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;CentOS&quot;&gt;&lt;a href=&quot;#CentOS&quot; class=&quot;headerlink&quot; title=&quot;CentOS&quot;&gt;&lt;/a&gt;CentOS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ yum install epel-release&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum install certbot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;AWS&quot;&gt;&lt;a href=&quot;#AWS&quot;
+&lt;p&gt;NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://letsencrypt.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Let’s Encrypt&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;CentOS&quot;&gt;&lt;a href=&quot;#CentOS&quot; class=&quot;headerlink&quot; title=&quot;CentOS&quot;&gt;&lt;/a&gt;CentOS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span
         
       
     
@@ -259,11 +262,11 @@
   </entry>
   
   <entry>
-    <title>Nginx install</title>
+    <title>NGINX 설치</title>
     <link href="http://spoved.org/2018/04/27/nginx-install/"/>
     <id>http://spoved.org/2018/04/27/nginx-install/</id>
     <published>2018-04-27T02:37:03.000Z</published>
-    <updated>2018-04-27T02:57:05.544Z</updated>
+    <updated>2018-04-27T18:39:36.620Z</updated>
     
     <summary type="html">
     
@@ -272,8 +275,9 @@
         
         
           &lt;p&gt;&lt;img src=&quot;/images/nginx/nginx.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;NGINX에 대한 설치방법입니다.&lt;br&gt;사용된 환경은 CentOS 7입니다.&lt;/p&gt;
 &lt;h2 id=&quot;한국-서버가-아닌-경우&quot;&gt;&lt;a href=&quot;#한국-서버가-아닌-경우&quot; class=&quot;headerlink&quot; title=&quot;한국 서버가 아닌 경우&quot;&gt;&lt;/a&gt;한국 서버가 아닌 경우&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;NGINX&quot;&gt;&lt;a href=&quot;#NGINX&quot; class=&quot;headerlink&quot;
+&lt;h2 id=&quot;NGINX&quot;&gt;&lt;a href=&quot;#NGINX&quot;
         
       
     
@@ -291,11 +295,11 @@
   </entry>
   
   <entry>
-    <title>Nginx?</title>
+    <title>NGINX</title>
     <link href="http://spoved.org/2018/04/27/nginx-intro/"/>
     <id>http://spoved.org/2018/04/27/nginx-intro/</id>
     <published>2018-04-27T02:30:43.000Z</published>
-    <updated>2018-04-27T02:37:30.719Z</updated>
+    <updated>2018-04-27T18:47:48.338Z</updated>
     
     <summary type="html">
     
@@ -322,11 +326,11 @@
   </entry>
   
   <entry>
-    <title>Jenkins install</title>
+    <title>젠킨스(Jenkins) 설치</title>
     <link href="http://spoved.org/2018/04/26/jenkins-install/"/>
     <id>http://spoved.org/2018/04/26/jenkins-install/</id>
     <published>2018-04-26T12:13:35.000Z</published>
-    <updated>2018-04-27T02:04:28.751Z</updated>
+    <updated>2018-04-27T18:36:51.090Z</updated>
     
     <summary type="html">
     
@@ -335,7 +339,8 @@
         
         
           &lt;p&gt;&lt;img src=&quot;/images/jenkins/jenkins.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;JENKINS&quot;&gt;&lt;a href=&quot;#JENKINS&quot; class=&quot;headerlink&quot; title=&quot;JENKINS&quot;&gt;&lt;/a&gt;JENKINS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ sudo rpm --import
+&lt;h2 id=&quot;JENKINS&quot;&gt;&lt;a href=&quot;#JENKINS&quot; class=&quot;headerlink&quot; title=&quot;JENKINS&quot;&gt;&lt;/a&gt;JENKINS&lt;/h2&gt;&lt;p&gt;젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.&lt;br&gt;사용된 환경은 CentOS 7입니다.&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo wget -O /etc/yum.repos.d/jenkins.repo
         
       
     
@@ -353,11 +358,11 @@
   </entry>
   
   <entry>
-    <title>Jenkins?</title>
+    <title>젠킨스(Jenkins)</title>
     <link href="http://spoved.org/2018/04/26/jenkins-intro/"/>
     <id>http://spoved.org/2018/04/26/jenkins-intro/</id>
     <published>2018-04-26T12:00:10.000Z</published>
-    <updated>2018-04-27T02:01:58.415Z</updated>
+    <updated>2018-04-27T18:48:35.893Z</updated>
     
     <summary type="html">
     
@@ -385,11 +390,11 @@
   </entry>
   
   <entry>
-    <title>spOveD</title>
+    <title>spOveD &lt;-</title>
     <link href="http://spoved.org/2018/04/26/spoved/"/>
     <id>http://spoved.org/2018/04/26/spoved/</id>
     <published>2018-04-26T11:47:09.524Z</published>
-    <updated>2018-04-27T02:29:37.896Z</updated>
+    <updated>2018-04-27T18:38:00.826Z</updated>
     
     <summary type="html">
     
@@ -397,7 +402,9 @@
       
         
         
-          &lt;p&gt;&lt;img src=&quot;/images/spoved/logo.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;개발과 운영에 관한 내용을 정리하려고 만든 사이트입니다.&lt;br&gt;궁금한 부분은 댓글 달아 주시면 아는 내에서
+          &lt;p&gt;&lt;img src=&quot;/images/spoved/logo.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;spoved는 DevOps를 뒤집어 놓은 단어입니다.&lt;/p&gt;
+&lt;p&gt;개발과 운영에 관한 내용을 정리하려고 만든 사이트입니다.&lt;br&gt;보시다 궁금한 내용은 댓글 달아 주시면 아는 내에서
         
       
     

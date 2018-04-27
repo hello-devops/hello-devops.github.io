@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Nginx install | spOveD</title>
+    <title>NGINX 설치 | spOveD</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="ops,nginx" />
     
-    <meta name="description" content="한국 서버가 아닌 경우1$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime NGINXnginx.repo 추가 1234567$ cat &amp;lt;&amp;lt;EOT &amp;gt;&amp;gt; /etc/yum.repos.d/nginx.repo[nginx]name=nginx repobaseurl=http://nginx.org">
+    <meta name="description" content="NGINX에 대한 설치방법입니다.사용된 환경은 CentOS 7입니다. 한국 서버가 아닌 경우1$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime NGINXnginx.repo 추가 1234567$ cat &amp;lt;&amp;lt;EOT &amp;gt;&amp;gt; /etc/yum.repos.d/nginx.repo[nginx]">
 <meta name="keywords" content="ops,nginx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nginx install">
+<meta property="og:title" content="NGINX 설치">
 <meta property="og:url" content="http://spoved.org/2018/04/27/nginx-install/index.html">
 <meta property="og:site_name" content="spOveD">
-<meta property="og:description" content="한국 서버가 아닌 경우1$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime NGINXnginx.repo 추가 1234567$ cat &amp;lt;&amp;lt;EOT &amp;gt;&amp;gt; /etc/yum.repos.d/nginx.repo[nginx]name=nginx repobaseurl=http://nginx.org">
+<meta property="og:description" content="NGINX에 대한 설치방법입니다.사용된 환경은 CentOS 7입니다. 한국 서버가 아닌 경우1$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime NGINXnginx.repo 추가 1234567$ cat &amp;lt;&amp;lt;EOT &amp;gt;&amp;gt; /etc/yum.repos.d/nginx.repo[nginx]">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://spoved.org/images/nginx/nginx.png">
-<meta property="og:updated_time" content="2018-04-27T02:57:05.544Z">
+<meta property="og:updated_time" content="2018-04-27T18:39:36.620Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nginx install">
-<meta name="twitter:description" content="한국 서버가 아닌 경우1$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime NGINXnginx.repo 추가 1234567$ cat &amp;lt;&amp;lt;EOT &amp;gt;&amp;gt; /etc/yum.repos.d/nginx.repo[nginx]name=nginx repobaseurl=http://nginx.org">
+<meta name="twitter:title" content="NGINX 설치">
+<meta name="twitter:description" content="NGINX에 대한 설치방법입니다.사용된 환경은 CentOS 7입니다. 한국 서버가 아닌 경우1$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime NGINXnginx.repo 추가 1234567$ cat &amp;lt;&amp;lt;EOT &amp;gt;&amp;gt; /etc/yum.repos.d/nginx.repo[nginx]">
 <meta name="twitter:image" content="http://spoved.org/images/nginx/nginx.png">
     
 
@@ -153,7 +153,7 @@ ga('send', 'pageview');
                 
     
         <h1 class="article-title" itemprop="name">
-        Nginx install
+        NGINX 설치
         </h1>
     
 
@@ -179,6 +179,7 @@ ga('send', 'pageview');
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/images/nginx/nginx.png" alt=""></p>
+<p>NGINX에 대한 설치방법입니다.<br>사용된 환경은 CentOS 7입니다.</p>
 <h2 id="한국-서버가-아닌-경우"><a href="#한국-서버가-아닌-경우" class="headerlink" title="한국 서버가 아닌 경우"></a>한국 서버가 아닌 경우</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime</span><br></pre></td></tr></table></figure>
 <h2 id="NGINX"><a href="#NGINX" class="headerlink" title="NGINX"></a>NGINX</h2><p>nginx.repo 추가</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ cat &lt;&lt;EOT &gt;&gt; /etc/yum.repos.d/nginx.repo</span><br><span class="line">[nginx]</span><br><span class="line">name=nginx repo</span><br><span class="line">baseurl=http://nginx.org/packages/centos/\$releasever/\$basearch/</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">EOT</span><br></pre></td></tr></table></figure>
@@ -192,7 +193,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://spoved.org/2018/04/27/nginx-install/" data-id="cjghyse0t000iogvz6mnifm2l" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://spoved.org/2018/04/27/nginx-install/" data-id="cjgian10e000dvwvzip2j8bji" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -277,14 +278,6 @@ ga('send', 'pageview');
             
                 
                 <li>
-                    <a class="social-tooltip" title="copyright" href="//crazyguys.me/" target="_blank">
-                        <i class="icon fa fa-copyright"></i>
-                    </a>
-                </li>
-                
-            
-                
-                <li>
                     <a class="social-tooltip" title="github" href="https://github.com/hello-devops" target="_blank">
                         <i class="icon fa fa-github"></i>
                     </a>
@@ -309,7 +302,7 @@ ga('send', 'pageview');
         <strong class="article-nav-caption">newer</strong>
         <p class="article-nav-title">
         
-            Nginx Letsencrypt
+            NGINX SSL 적용하기 (LetsEncrypt 사용)
         
         </p>
         <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
@@ -318,7 +311,7 @@ ga('send', 'pageview');
     
         <a href="/2018/04/27/nginx-intro/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Nginx?</p>
+        <p class="article-nav-title">NGINX</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -383,7 +376,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/28/docker-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/docker/brand-full.svg)" alt="Docker" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/docker/brand-full.svg)" alt="도커(Docker)" class="thumbnail-image"></span>
     
     
 </a>
@@ -392,7 +385,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Docker/">Docker</a></p>
-                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">Docker</a></p>
+                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">도커(Docker)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T16:15:11.000Z" itemprop="datePublished">2018-04-28</time></p>
                         </div>
                     </li>
@@ -403,7 +396,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/27/springboot-database/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="Spring Boot database" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="스프링부트(Spring Boot) database 연동" class="thumbnail-image"></span>
     
     
 </a>
@@ -412,7 +405,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">Spring Boot database</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">스프링부트(Spring Boot) database 연동</a></p>
                             <p class="item-date"><time datetime="2018-04-27T14:34:29.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -423,7 +416,7 @@ ga('send', 'pageview');
                             <a href="/2018/04/27/springboot-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/spring/springboot.png)" alt="Spring Boot" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/spring/springboot.png)" alt="스프링부트(Spring Boot)" class="thumbnail-image"></span>
     
     
 </a>
@@ -432,7 +425,7 @@ ga('send', 'pageview');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">Spring Boot</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">스프링부트(Spring Boot)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T13:45:01.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -487,6 +480,10 @@ ga('send', 'pageview');
         <h3 class="widget-title">links</h3>
         <div class="widget">
             <ul>
+                
+                    <li>
+                        <a href="//crazyguys.me">CRAZYGUYS</a>
+                    </li>
                 
             </ul>
         </div>

@@ -159,7 +159,7 @@ ga('send', 'pageview');
         <a href="/2018/04/27/nginx-proxy/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/nginx/nginx.png)" alt="Nginx proxy" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/nginx/nginx.png)" alt="NGINX 프록시(Proxy) 설정" class="thumbnail-image"></span>
     
     
         
@@ -184,13 +184,14 @@ ga('send', 'pageview');
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/27/nginx-proxy/">Nginx proxy</a>
+        <a href="/2018/04/27/nginx-proxy/">NGINX 프록시(Proxy) 설정</a>
         </h1>
     
 
         <p class="article-excerpt">
             
-프록시123456789101112131415upstream backed &#123;  ip_hash;  server localhost:8080;&#125;server &#123;  listen 80;  server_name ;  location / &#123;    proxy_set_header Host \$http_host;    proxy_set_he
+NGINX를 이용하여 프록시 설정을 하는 방법입니다.보통 뒤에 톰캣 등의 서버를 물리고 SSL 설정을 해주거나 혹은 L4의 대용으로 사용이 가능합니다.
+프록시123456789101112131415upstream backed &#123;  ip_hash;  server localhost:8080;&#125;server &#123;  listen 80;  s
         </p>
     </div>
 </article>
@@ -206,7 +207,7 @@ ga('send', 'pageview');
         <a href="/2018/04/27/nginx-letsencrypt/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/nginx/letsencrypt-logo-horizontal.svg)" alt="Nginx Letsencrypt" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/nginx/letsencrypt-logo-horizontal.svg)" alt="NGINX SSL 적용하기 (LetsEncrypt 사용)" class="thumbnail-image"></span>
     
     
         
@@ -231,15 +232,16 @@ ga('send', 'pageview');
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/27/nginx-letsencrypt/">Nginx Letsencrypt</a>
+        <a href="/2018/04/27/nginx-letsencrypt/">NGINX SSL 적용하기 (LetsEncrypt 사용)</a>
         </h1>
     
 
         <p class="article-excerpt">
             
+NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다.
+Let’s Encrypt
 CentOS12$ yum install epel-release$ yum install certbot
-AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+x certbot-auto$ ./certbot-auto --debug
-letsencrypt.ini12345678910111213141516171819202122
+AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+
         </p>
     </div>
 </article>
@@ -259,7 +261,7 @@ letsencrypt.ini12345678910111213141516171819202122
         <a href="/2018/04/27/nginx-install/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/nginx/nginx.png)" alt="Nginx install" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/nginx/nginx.png)" alt="NGINX 설치" class="thumbnail-image"></span>
     
     
         
@@ -284,15 +286,16 @@ letsencrypt.ini12345678910111213141516171819202122
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/27/nginx-install/">Nginx install</a>
+        <a href="/2018/04/27/nginx-install/">NGINX 설치</a>
         </h1>
     
 
         <p class="article-excerpt">
             
+NGINX에 대한 설치방법입니다.사용된 환경은 CentOS 7입니다.
 한국 서버가 아닌 경우1$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 NGINXnginx.repo 추가
-1234567$ cat &lt;&lt;EOT &gt;&gt; /etc/yum.repos.d/nginx.repo[nginx]name=nginx repobaseurl=http://nginx.org
+1234567$ cat &lt;&lt;EOT &gt;&gt; /etc/yum.repos.d/nginx.repo[nginx]
         </p>
     </div>
 </article>
@@ -308,7 +311,7 @@ NGINXnginx.repo 추가
         <a href="/2018/04/27/nginx-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/nginx/nginx.png)" alt="Nginx?" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/nginx/nginx.png)" alt="NGINX" class="thumbnail-image"></span>
     
     
         
@@ -333,7 +336,7 @@ NGINXnginx.repo 추가
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/27/nginx-intro/">Nginx?</a>
+        <a href="/2018/04/27/nginx-intro/">NGINX</a>
         </h1>
     
 
@@ -361,14 +364,6 @@ NGINX 공식 홈페이지https://nginx.org/en/
     <div class="sidebar-top">
         <p>follow:</p>
         <ul class="social-links">
-            
-                
-                <li>
-                    <a class="social-tooltip" title="copyright" href="//crazyguys.me/" target="_blank">
-                        <i class="icon fa fa-copyright"></i>
-                    </a>
-                </li>
-                
             
                 
                 <li>
@@ -447,7 +442,7 @@ NGINX 공식 홈페이지https://nginx.org/en/
                             <a href="/2018/04/28/docker-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/docker/brand-full.svg)" alt="Docker" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/docker/brand-full.svg)" alt="도커(Docker)" class="thumbnail-image"></span>
     
     
 </a>
@@ -456,7 +451,7 @@ NGINX 공식 홈페이지https://nginx.org/en/
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Docker/">Docker</a></p>
-                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">Docker</a></p>
+                            <p class="item-title"><a href="/2018/04/28/docker-intro/" class="title">도커(Docker)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T16:15:11.000Z" itemprop="datePublished">2018-04-28</time></p>
                         </div>
                     </li>
@@ -467,7 +462,7 @@ NGINX 공식 홈페이지https://nginx.org/en/
                             <a href="/2018/04/27/springboot-database/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="Spring Boot database" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/mysql/mysql-logo.svg)" alt="스프링부트(Spring Boot) database 연동" class="thumbnail-image"></span>
     
     
 </a>
@@ -476,7 +471,7 @@ NGINX 공식 홈페이지https://nginx.org/en/
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">Spring Boot database</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-database/" class="title">스프링부트(Spring Boot) database 연동</a></p>
                             <p class="item-date"><time datetime="2018-04-27T14:34:29.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -487,7 +482,7 @@ NGINX 공식 홈페이지https://nginx.org/en/
                             <a href="/2018/04/27/springboot-intro/" class="thumbnail">
     
     
-        <span style="background-image:url(/images/spring/springboot.png)" alt="Spring Boot" class="thumbnail-image"></span>
+        <span style="background-image:url(/images/spring/springboot.png)" alt="스프링부트(Spring Boot)" class="thumbnail-image"></span>
     
     
 </a>
@@ -496,7 +491,7 @@ NGINX 공식 홈페이지https://nginx.org/en/
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Dev/">Dev</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Dev/SpringBoot/">SpringBoot</a></p>
-                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">Spring Boot</a></p>
+                            <p class="item-title"><a href="/2018/04/27/springboot-intro/" class="title">스프링부트(Spring Boot)</a></p>
                             <p class="item-date"><time datetime="2018-04-27T13:45:01.000Z" itemprop="datePublished">2018-04-27</time></p>
                         </div>
                     </li>
@@ -551,6 +546,10 @@ NGINX 공식 홈페이지https://nginx.org/en/
         <h3 class="widget-title">links</h3>
         <div class="widget">
             <ul>
+                
+                    <li>
+                        <a href="//crazyguys.me">CRAZYGUYS</a>
+                    </li>
                 
             </ul>
         </div>
