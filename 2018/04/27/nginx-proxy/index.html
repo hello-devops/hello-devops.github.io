@@ -3,25 +3,25 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Nginx? | spOveD</title>
+    <title>Nginx proxy | spOveD</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="ops,nginx" />
     
-    <meta name="description" content="HTTP와 프록시용으로 많이 사용되는 서버. NGINX 공식 홈페이지https://nginx.org/en/">
+    <meta name="description" content="프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  server_name ;  location / &amp;#123;    proxy_set_header Host \$http_host;    proxy_set_he">
 <meta name="keywords" content="ops,nginx">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nginx?">
-<meta property="og:url" content="http://spoved.org/2018/04/27/nginx-intro/index.html">
+<meta property="og:title" content="Nginx proxy">
+<meta property="og:url" content="http://spoved.org/2018/04/27/nginx-proxy/index.html">
 <meta property="og:site_name" content="spOveD">
-<meta property="og:description" content="HTTP와 프록시용으로 많이 사용되는 서버. NGINX 공식 홈페이지https://nginx.org/en/">
+<meta property="og:description" content="프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  server_name ;  location / &amp;#123;    proxy_set_header Host \$http_host;    proxy_set_he">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://spoved.org/images/nginx/nginx.png">
-<meta property="og:updated_time" content="2018-04-27T02:37:30.719Z">
+<meta property="og:updated_time" content="2018-04-27T13:21:32.998Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nginx?">
-<meta name="twitter:description" content="HTTP와 프록시용으로 많이 사용되는 서버. NGINX 공식 홈페이지https://nginx.org/en/">
+<meta name="twitter:title" content="Nginx proxy">
+<meta name="twitter:description" content="프록시123456789101112131415upstream backed &amp;#123;  ip_hash;  server localhost:8080;&amp;#125;server &amp;#123;  listen 80;  server_name ;  location / &amp;#123;    proxy_set_header Host \$http_host;    proxy_set_he">
 <meta name="twitter:image" content="http://spoved.org/images/nginx/nginx.png">
     
 
@@ -140,14 +140,14 @@ ga('send', 'pageview');
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-nginx-intro" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-nginx-proxy" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Nginx?
+        Nginx proxy
         </h1>
     
 
@@ -157,8 +157,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2018/04/27/nginx-intro/" class="article-date">
-            <time datetime="2018-04-27T02:30:43.000Z" itemprop="datePublished">2018-04-27</time>
+        <a href="/2018/04/27/nginx-proxy/" class="article-date">
+            <time datetime="2018-04-27T11:05:23.000Z" itemprop="datePublished">2018-04-27</time>
         </a>
     </div>
 
@@ -172,8 +172,17 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p><img src="/images/nginx/nginx.png" alt=""><br>HTTP와 프록시용으로 많이 사용되는 서버.</p>
-<p><a href="https://nginx.org/en/" target="_blank" rel="noopener">NGINX 공식 홈페이지<br>https://nginx.org/en/</a></p>
+            <p><img src="/images/nginx/nginx.png" alt=""></p>
+<h2 id="프록시"><a href="#프록시" class="headerlink" title="프록시"></a>프록시</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">upstream backed &#123;</span><br><span class="line">  ip_hash;</span><br><span class="line">  server localhost:8080;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  server_name ;</span><br><span class="line">  location / &#123;</span><br><span class="line">    proxy_set_header Host \$http_host;</span><br><span class="line">    proxy_set_header X-Real-IP \$remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_pass http://backend;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>server_name은 내용은 상황에 맞게</p>
+<h2 id="프록시-SSL"><a href="#프록시-SSL" class="headerlink" title="프록시 + SSL"></a>프록시 + SSL</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">upstream backed &#123;</span><br><span class="line">  ip_hash;</span><br><span class="line">  server localhost:8080;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  server_name ;</span><br><span class="line">  return 301 https://\$host\$request_uri;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 443 ssl;</span><br><span class="line">  server_name ;</span><br><span class="line">  ssl_certificate /etc/letsencrypt/live//fullchain.pem;</span><br><span class="line">  ssl_certificate_key /etc/letsencrypt/live//privkey.pem;</span><br><span class="line"></span><br><span class="line">  location / &#123;</span><br><span class="line">    proxy_set_header Host \$http_host;</span><br><span class="line">    proxy_set_header X-Real-IP \$remote_addr;</span><br><span class="line">    proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;</span><br><span class="line">    proxy_pass http://backend;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>server_name과 ssl_certificate 내용은 상황에 맞게</p>
+<p><a href="https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/" target="_blank" rel="noopener">공식 문서</a></p>
+<h2 id="Proxy-접속이-안되는-경우"><a href="#Proxy-접속이-안되는-경우" class="headerlink" title="Proxy 접속이 안되는 경우"></a>Proxy 접속이 안되는 경우</h2><h2 id="13-Permission-denied-while-connecting-to-upstream"><a href="#13-Permission-denied-while-connecting-to-upstream" class="headerlink" title="(13: Permission denied) while connecting to upstream"></a>(13: Permission denied) while connecting to upstream</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cat /var/log/nginx/error.log</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">....</span><br><span class="line">2016/12/10 22:51:05 [crit] 813#813: *1 connect() to 127.0.0.1:8080 failed (13: Permission denied) while connecting to upstream, client: 0.0.0.0, server: spoved.org, request: &quot;GET / HTTP/1.1&quot;, upstream: &quot;http://127.0.0.1:8080/&quot;, host: &quot;spoved.org&quot;, referrer: &quot;https://spoved.org/&quot;</span><br><span class="line">2016/12/10 22:51:05 [warn] 813#813: *1 upstream server temporarily disabled while connecting to upstream, client: 0.0.0.0, server: spoved.org, request: &quot;GET / HTTP/1.1&quot;, upstream: &quot;http://127.0.0.1:8080/&quot;, host: &quot;spoved.org&quot;, referrer: &quot;https://spoved.org/&quot;</span><br><span class="line">....</span><br></pre></td></tr></table></figure>
+<p>해당 경우 아래 명령어 실행</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ setsebool -P httpd_can_network_connect on</span><br></pre></td></tr></table></figure>
+<p><a href="https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx" target="_blank" rel="noopener">stackoverflow</a></p>
 
         </div>
         <footer class="article-footer">
@@ -181,7 +190,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://spoved.org/2018/04/27/nginx-intro/" data-id="cjghyse0u000jogvzrjjlicxw" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://spoved.org/2018/04/27/nginx-proxy/" data-id="cjghyse0v000logvzitamdxp0" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -278,20 +287,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2018/04/27/nginx-install/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            Nginx install
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2018/04/26/jenkins-install/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2018/04/27/nginx-letsencrypt/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Jenkins install</p>
+        <p class="article-nav-title">Nginx Letsencrypt</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -496,7 +495,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'spoved';
     
     
-    var disqus_url = 'http://spoved.org/2018/04/27/nginx-intro/';
+    var disqus_url = 'http://spoved.org/2018/04/27/nginx-proxy/';
     
     (function() {
     var dsq = document.createElement('script');
