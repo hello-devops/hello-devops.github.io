@@ -89,7 +89,7 @@
     <link href="http://spoved.org/2018/04/28/docker-intro/"/>
     <id>http://spoved.org/2018/04/28/docker-intro/</id>
     <published>2018-04-27T16:15:11.000Z</published>
-    <updated>2018-04-27T16:31:59.526Z</updated>
+    <updated>2018-04-27T17:25:09.986Z</updated>
     
     <summary type="html">
     
@@ -99,6 +99,7 @@
         
           &lt;p&gt;&lt;img src=&quot;/images/docker/brand-full.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;Docker&quot;&gt;&lt;a href=&quot;#Docker&quot; class=&quot;headerlink&quot; title=&quot;Docker&quot;&gt;&lt;/a&gt;Docker&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Docker 내부에 모든 설정이 들어가 있어 클라우드 서비스에 최적화&lt;/li&gt;
 &lt;li&gt;DevOps 구현에 최적화&lt;/li&gt;
 &lt;li&gt;Microservices 에 최적화&lt;/li&gt;
 &lt;/ul&gt;
