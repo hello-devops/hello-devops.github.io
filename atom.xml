@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spoved.org/"/>
-  <updated>2018-04-26T14:41:14.015Z</updated>
+  <updated>2018-04-27T02:04:28.751Z</updated>
   <id>http://spoved.org/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://spoved.org/2018/04/26/jenkins-install/"/>
     <id>http://spoved.org/2018/04/26/jenkins-install/</id>
     <published>2018-04-26T12:13:35.000Z</published>
-    <updated>2018-04-26T14:41:14.015Z</updated>
+    <updated>2018-04-27T02:04:28.751Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;h2 id=&quot;JENKINS&quot;&gt;&lt;a href=&quot;#JENKINS&quot; class=&quot;headerlink&quot; title=&quot;JENKINS&quot;&gt;&lt;/a&gt;JENKINS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ sudo rpm --import
+          &lt;p&gt;&lt;img src=&quot;/images/jenkins/jenkins.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;JENKINS&quot;&gt;&lt;a href=&quot;#JENKINS&quot; class=&quot;headerlink&quot; title=&quot;JENKINS&quot;&gt;&lt;/a&gt;JENKINS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ sudo rpm --import
         
       
     
@@ -51,7 +52,7 @@
     <link href="http://spoved.org/2018/04/26/jenkins-intro/"/>
     <id>http://spoved.org/2018/04/26/jenkins-intro/</id>
     <published>2018-04-26T12:00:10.000Z</published>
-    <updated>2018-04-26T14:42:06.607Z</updated>
+    <updated>2018-04-27T02:01:58.415Z</updated>
     
     <summary type="html">
     
@@ -59,7 +60,7 @@
       
         
         
-          &lt;p&gt;CI(Continuous Integration, 지속적 통합) 서비스를 제공하는 툴.&lt;/p&gt;
+          &lt;p&gt;&lt;img src=&quot;/images/jenkins/jenkins.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;CI(Continuous Integration, 지속적 통합) 서비스를 제공하는 툴.&lt;/p&gt;
 &lt;p&gt;간단하게 요약하면 클릭 한 번에 유닛 테스트와 배포를 하도록 도와주는 툴입니다.&lt;br&gt;사람이 직접 배포하면 실수의 귀찮고 위험도 있는데 이런 번거로움을 없애주는 고마운 툴이죠.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://jenkins.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;젠킨스 공식
         
@@ -83,7 +84,7 @@
     <link href="http://spoved.org/2018/04/26/spoved/"/>
     <id>http://spoved.org/2018/04/26/spoved/</id>
     <published>2018-04-26T11:47:09.524Z</published>
-    <updated>2018-04-26T12:11:39.076Z</updated>
+    <updated>2018-04-27T02:03:07.303Z</updated>
     
     <summary type="html">
     
@@ -91,7 +92,7 @@
       
         
         
-          &lt;p&gt;개발과 운영에 관한 내용을 정리하려고 만든 사이트입니다.&lt;br&gt;궁금한 부분은 댓글 달아 주시면 아는 내에서
+          &lt;p&gt;&lt;img src=&quot;/images/spoved/logo.png&quot; alt=&quot;&quot;&gt;&lt;br&gt;개발과 운영에 관한 내용을 정리하려고 만든 사이트입니다.&lt;br&gt;궁금한 부분은 댓글 달아 주시면 아는 내에서
         
       
     
