@@ -12,6 +12,7 @@ tags:
 
 ## Docker
 
+ - Docker 내부에 모든 설정이 들어가 있어 클라우드 서비스에 최적화
  - DevOps 구현에 최적화
  - Microservices 에 최적화
 
