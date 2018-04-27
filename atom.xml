@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spoved.org/"/>
-  <updated>2018-04-27T16:49:05.862Z</updated>
+  <updated>2018-04-27T17:07:43.800Z</updated>
   <id>http://spoved.org/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Spring Dockerfile</title>
-    <link href="http://spoved.org/2018/04/28/spring-dockerfile/"/>
-    <id>http://spoved.org/2018/04/28/spring-dockerfile/</id>
-    <published>2018-04-27T16:38:17.000Z</published>
-    <updated>2018-04-27T16:49:05.862Z</updated>
+    <title>GO Dockerfile</title>
+    <link href="http://spoved.org/2018/04/28/go-dockerfile/"/>
+    <id>http://spoved.org/2018/04/28/go-dockerfile/</id>
+    <published>2018-04-27T17:01:52.000Z</published>
+    <updated>2018-04-27T17:07:43.800Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,41 @@
       
         
         
-          &lt;h2 id=&quot;WAR-Deploy&quot;&gt;&lt;a href=&quot;#WAR-Deploy&quot; class=&quot;headerlink&quot; title=&quot;WAR Deploy&quot;&gt;&lt;/a&gt;WAR Deploy&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;Dockerfile&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span
+          &lt;h2 id=&quot;GO-Deploy&quot;&gt;&lt;a href=&quot;#GO-Deploy&quot; class=&quot;headerlink&quot; title=&quot;GO Deploy&quot;&gt;&lt;/a&gt;GO Deploy&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;Dockerfile&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="Ops" scheme="http://spoved.org/categories/Ops/"/>
+    
+      <category term="Docker" scheme="http://spoved.org/categories/Ops/Docker/"/>
+    
+      <category term="Dockerfile" scheme="http://spoved.org/categories/Ops/Docker/Dockerfile/"/>
+    
+    
+      <category term="ops" scheme="http://spoved.org/tags/ops/"/>
+    
+      <category term="docker" scheme="http://spoved.org/tags/docker/"/>
+    
+      <category term="dockerfile" scheme="http://spoved.org/tags/dockerfile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Dockerfile</title>
+    <link href="http://spoved.org/2018/04/28/spring-dockerfile/"/>
+    <id>http://spoved.org/2018/04/28/spring-dockerfile/</id>
+    <published>2018-04-27T16:38:17.000Z</published>
+    <updated>2018-04-27T17:08:33.386Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;WAR-Deploy-with-tomcat&quot;&gt;&lt;a href=&quot;#WAR-Deploy-with-tomcat&quot; class=&quot;headerlink&quot; title=&quot;WAR Deploy (with tomcat)&quot;&gt;&lt;/a&gt;WAR Deploy (with tomcat)&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;figcaption&gt;&lt;span&gt;Dockerfile&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span
         
       
     

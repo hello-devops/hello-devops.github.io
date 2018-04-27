@@ -3,17 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Category: Nginx | spOveD</title>
+    <title>GO Dockerfile | spOveD</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="spOveD">
-<meta property="og:url" content="http://spoved.org/categories/Ops/Nginx/index.html">
+        <meta name="keywords" content="ops,docker,dockerfile" />
+    
+    <meta name="description" content="GO DeployDockerfile12345678910111213141516FROM       golangMAINTAINER pandora@crazyguys.meENV        DATABASE_ADDRESS=&amp;quot;database&amp;quot; \           REDIS_ADDRESS=&amp;quot;redis:6379&amp;quot;WORKDIR    $G">
+<meta name="keywords" content="ops,docker,dockerfile">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GO Dockerfile">
+<meta property="og:url" content="http://spoved.org/2018/04/28/go-dockerfile/index.html">
 <meta property="og:site_name" content="spOveD">
+<meta property="og:description" content="GO DeployDockerfile12345678910111213141516FROM       golangMAINTAINER pandora@crazyguys.meENV        DATABASE_ADDRESS=&amp;quot;database&amp;quot; \           REDIS_ADDRESS=&amp;quot;redis:6379&amp;quot;WORKDIR    $G">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-04-27T17:07:43.800Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="spOveD">
+<meta name="twitter:title" content="GO Dockerfile">
+<meta name="twitter:description" content="GO DeployDockerfile12345678910111213141516FROM       golangMAINTAINER pandora@crazyguys.meENV        DATABASE_ADDRESS=&amp;quot;database&amp;quot; \           REDIS_ADDRESS=&amp;quot;redis:6379&amp;quot;WORKDIR    $G">
     
 
     
@@ -133,225 +140,124 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-folder-open"></i>Category: <em class="page-title-link">Nginx</em>
+    <a class="page-title-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Ops/Docker/">Docker</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Ops/Docker/Dockerfile/">Dockerfile</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-go-dockerfile" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2018" class="archive-year"><i class="icon fa fa-calendar-o"></i>2018</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2018/04/27/nginx-proxy/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/nginx/nginx.png)" alt="Nginx proxy" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://spoved.org/2018/04/27/nginx-proxy/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Nginx/">Nginx</a>
-            </div>
-            <div class="date"><time datetime="2018-04-27T11:05:23.000Z" itemprop="datePublished">2018-04-27</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/27/nginx-proxy/">Nginx proxy</a>
+        GO Dockerfile
         </h1>
     
 
-        <p class="article-excerpt">
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/04/28/go-dockerfile/" class="article-date">
+            <time datetime="2018-04-27T17:01:52.000Z" itemprop="datePublished">2018-04-28</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/docker/">docker</a>, <a class="tag-link" href="/tags/dockerfile/">dockerfile</a>, <a class="tag-link" href="/tags/ops/">ops</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="GO-Deploy"><a href="#GO-Deploy" class="headerlink" title="GO Deploy"></a>GO Deploy</h2><figure class="highlight plain"><figcaption><span>Dockerfile</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">FROM       golang</span><br><span class="line">MAINTAINER pandora@crazyguys.me</span><br><span class="line"></span><br><span class="line">ENV        DATABASE_ADDRESS=&quot;database&quot; \</span><br><span class="line">           REDIS_ADDRESS=&quot;redis:6379&quot;</span><br><span class="line"></span><br><span class="line">WORKDIR    $GOPATH</span><br><span class="line"></span><br><span class="line">COPY       * ./src/_project_/</span><br><span class="line"></span><br><span class="line">RUN        apt-get -yqq update &amp;&amp; \</span><br><span class="line">           ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime &amp;&amp; \</span><br><span class="line">           go get _project_ &amp;&amp; \</span><br><span class="line">           go build _project_</span><br><span class="line"></span><br><span class="line">CMD [&quot;./_project_&quot;]</span><br></pre></td></tr></table></figure>
+<p>database, redis, <em>project</em> 을 각각 상황에 맞게 수정</p>
+
+        </div>
+        <footer class="article-footer">
             
-프록시123456789101112131415upstream backed &#123;  ip_hash;  server localhost:8080;&#125;server &#123;  listen 80;  server_name ;  location / &#123;    proxy_set_header Host \$http_host;    proxy_set_he
-        </p>
+
+
+
+    <a data-url="http://spoved.org/2018/04/28/go-dockerfile/" data-id="cjgi7fmm10004e0vzjepokn9r" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2018/04/27/nginx-letsencrypt/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/nginx/letsencrypt-logo-horizontal.svg)" alt="Nginx Letsencrypt" class="thumbnail-image"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://spoved.org/2018/04/27/nginx-letsencrypt/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Nginx/">Nginx</a>
-            </div>
-            <div class="date"><time datetime="2018-04-27T03:00:08.000Z" itemprop="datePublished">2018-04-27</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/27/nginx-letsencrypt/">Nginx Letsencrypt</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-CentOS12$ yum install epel-release$ yum install certbot
-AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+x certbot-auto$ ./certbot-auto --debug
-letsencrypt.ini12345678910111213141516171819202122
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-        </div>
-    
 
     
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2018/04/27/nginx-install/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/nginx/nginx.png)" alt="Nginx install" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://spoved.org/2018/04/27/nginx-install/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Nginx/">Nginx</a>
-            </div>
-            <div class="date"><time datetime="2018-04-27T02:37:03.000Z" itemprop="datePublished">2018-04-27</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/27/nginx-install/">Nginx install</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-한국 서버가 아닌 경우1$ sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
-NGINXnginx.repo 추가
-1234567$ cat &lt;&lt;EOT &gt;&gt; /etc/yum.repos.d/nginx.repo[nginx]name=nginx repobaseurl=http://nginx.org
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2018/04/27/nginx-intro/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/nginx/nginx.png)" alt="Nginx?" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://spoved.org/2018/04/27/nginx-intro/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Nginx/">Nginx</a>
-            </div>
-            <div class="date"><time datetime="2018-04-27T02:30:43.000Z" itemprop="datePublished">2018-04-27</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/27/nginx-intro/">Nginx?</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            HTTP와 프록시용으로 많이 사용되는 서버.
-NGINX 공식 홈페이지https://nginx.org/en/
-
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
-
-
+    </section>
 
 
                         </div>
@@ -380,6 +286,19 @@ NGINX 공식 홈페이지https://nginx.org/en/
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/04/28/spring-dockerfile/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">Spring Dockerfile</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -575,11 +494,13 @@ NGINX 공식 홈페이지https://nginx.org/en/
     var disqus_shortname = 'spoved';
     
     
+    var disqus_url = 'http://spoved.org/2018/04/28/go-dockerfile/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
