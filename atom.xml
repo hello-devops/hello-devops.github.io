@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spoved.org/"/>
-  <updated>2018-04-27T13:21:32.998Z</updated>
+  <updated>2018-04-27T14:31:25.290Z</updated>
   <id>http://spoved.org/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring Boot</title>
+    <link href="http://spoved.org/2018/04/27/springboot-intro/"/>
+    <id>http://spoved.org/2018/04/27/springboot-intro/</id>
+    <published>2018-04-27T13:45:01.000Z</published>
+    <updated>2018-04-27T14:31:25.290Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/spring/springboot.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;스프링부트&quot;&gt;&lt;a href=&quot;#스프링부트&quot; class=&quot;headerlink&quot; title=&quot;스프링부트&quot;&gt;&lt;/a&gt;스프링부트&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Tocmat, Jetty, Undertow를 내장하고 있습니다.&lt;/li&gt;
+&lt;li&gt;가능한 Spring 설정을 자동으로 해줍니다.&lt;/li&gt;
+&lt;li&gt;메트릭, 상태 확인 등의 기능을 제공합니다.&lt;/li&gt;
+&lt;li&gt;XML을 사용하지 않아도 됩니다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Spring의 복잡한 부분을 최대한 간소화 시킨 프로젝트입니다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://projects.spring.io/spring-boot/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Dev" scheme="http://spoved.org/categories/Dev/"/>
+    
+      <category term="SpringBoot" scheme="http://spoved.org/categories/Dev/SpringBoot/"/>
+    
+    
+      <category term="dev" scheme="http://spoved.org/tags/dev/"/>
+    
+      <category term="springboot" scheme="http://spoved.org/tags/springboot/"/>
+    
+  </entry>
   
   <entry>
     <title>Nginx proxy</title>
