@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spoved.org/"/>
-  <updated>2018-04-27T02:57:05.544Z</updated>
+  <updated>2018-04-27T10:59:35.364Z</updated>
   <id>http://spoved.org/</id>
   
   <author>
@@ -15,6 +15,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Nginx Letsencrypt</title>
+    <link href="http://spoved.org/2018/04/27/nginx-letsencrypt/"/>
+    <id>http://spoved.org/2018/04/27/nginx-letsencrypt/</id>
+    <published>2018-04-27T03:00:08.000Z</published>
+    <updated>2018-04-27T10:59:35.364Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/nginx/letsencrypt-logo-horizontal.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;CentOS&quot;&gt;&lt;a href=&quot;#CentOS&quot; class=&quot;headerlink&quot; title=&quot;CentOS&quot;&gt;&lt;/a&gt;CentOS&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ yum install epel-release&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ yum install certbot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;AWS&quot;&gt;&lt;a href=&quot;#AWS&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Ops" scheme="http://spoved.org/categories/Ops/"/>
+    
+      <category term="Nginx" scheme="http://spoved.org/categories/Ops/Nginx/"/>
+    
+    
+      <category term="ops" scheme="http://spoved.org/tags/ops/"/>
+    
+      <category term="nginx" scheme="http://spoved.org/tags/nginx/"/>
+    
+      <category term="ssl" scheme="http://spoved.org/tags/ssl/"/>
+    
+      <category term="letsencrypt" scheme="http://spoved.org/tags/letsencrypt/"/>
+    
+  </entry>
   
   <entry>
     <title>Nginx install</title>
