@@ -1,5 +1,5 @@
 ---
-title: Spring Boot database
+title: 스프링부트(Spring Boot) database 연동
 date: 2018-04-27 23:34:29
 categories:
 - Dev
@@ -9,6 +9,10 @@ tags:
 - springboot
 - database
 ---
+
+스프링부트와 데이터베이스를 연동하는 방법입니다.
+MySQL, MariaDB, AuroraDB 의 경우 동일하게 사용 가능합니다.
+
 ## MySQL 연동
 
 ![](/images/mysql/mysql-logo.svg)

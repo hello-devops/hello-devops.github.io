@@ -1,5 +1,5 @@
 ---
-title: Nginx install
+title: NGINX 설치
 date: 2018-04-27 11:37:03
 categories:
 - Ops
@@ -9,6 +9,10 @@ tags:
 - nginx
 ---
 ![](/images/nginx/nginx.png)
+
+NGINX에 대한 설치방법입니다.
+사용된 환경은 CentOS 7입니다.
+
 ## 한국 서버가 아닌 경우
 
 {% codeblock %}

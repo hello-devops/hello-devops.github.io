@@ -1,5 +1,5 @@
 ---
-title: Nginx Letsencrypt
+title: NGINX SSL 적용하기 (LetsEncrypt 사용)
 date: 2018-04-27 12:00:08
 categories:
 - Ops
@@ -11,6 +11,10 @@ tags:
 - letsencrypt
 ---
 ![](/images/nginx/letsencrypt-logo-horizontal.svg)
+
+NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다.
+
+[Let's Encrypt](https://letsencrypt.org/)
 
 ## CentOS
 

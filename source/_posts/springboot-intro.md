@@ -1,5 +1,5 @@
 ---
-title: Spring Boot
+title: 스프링부트(Spring Boot)
 date: 2018-04-27 22:45:01
 categories:
 - Dev

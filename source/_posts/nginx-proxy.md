@@ -1,5 +1,5 @@
 ---
-title: Nginx proxy
+title: NGINX 프록시(Proxy) 설정
 date: 2018-04-27 20:05:23
 categories:
 - Ops
@@ -9,6 +9,9 @@ tags:
 - nginx
 ---
 ![](/images/nginx/nginx.png)
+
+NGINX를 이용하여 프록시 설정을 하는 방법입니다.
+보통 뒤에 톰캣 등의 서버를 물리고 SSL 설정을 해주거나 혹은 L4의 대용으로 사용이 가능합니다.
 
 ## 프록시
 

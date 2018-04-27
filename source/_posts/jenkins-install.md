@@ -1,5 +1,5 @@
 ---
-title: Jenkins install
+title: 젠킨스(Jenkins) 설치
 date: 2018-04-26 21:13:35
 categories:
 - Ops
@@ -9,7 +9,11 @@ tags:
 - jenkins
 ---
 ![](/images/jenkins/jenkins.png)
+
 ## JENKINS
+
+젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.
+사용된 환경은 CentOS 7입니다.
 
 {% codeblock %}
     $ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo

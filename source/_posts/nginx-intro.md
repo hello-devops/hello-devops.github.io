@@ -1,5 +1,5 @@
 ---
-title: Nginx?
+title: NGINX
 date: 2018-04-27 11:30:43
 categories:
 - Ops

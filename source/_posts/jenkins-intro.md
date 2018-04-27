@@ -1,5 +1,5 @@
 ---
-title: Jenkins?
+title: 젠킨스(Jenkins)
 date: 2018-04-26 21:00:10
 categories:
 - Ops
