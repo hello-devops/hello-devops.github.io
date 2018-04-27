@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spoved.org/"/>
-  <updated>2018-04-27T15:02:01.062Z</updated>
+  <updated>2018-04-27T16:31:59.526Z</updated>
   <id>http://spoved.org/</id>
   
   <author>
@@ -17,11 +17,46 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Docker</title>
+    <link href="http://spoved.org/2018/04/28/docker-intro/"/>
+    <id>http://spoved.org/2018/04/28/docker-intro/</id>
+    <published>2018-04-27T16:15:11.000Z</published>
+    <updated>2018-04-27T16:31:59.526Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;/images/docker/brand-full.svg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Docker&quot;&gt;&lt;a href=&quot;#Docker&quot; class=&quot;headerlink&quot; title=&quot;Docker&quot;&gt;&lt;/a&gt;Docker&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;DevOps 구현에 최적화&lt;/li&gt;
+&lt;li&gt;Microservices 에 최적화&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.docker.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Docker&lt;/a&gt; / &lt;a href=&quot;https://hub.docker.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Docker
+        
+      
+    
+    </summary>
+    
+      <category term="Ops" scheme="http://spoved.org/categories/Ops/"/>
+    
+      <category term="Docker" scheme="http://spoved.org/categories/Ops/Docker/"/>
+    
+    
+      <category term="ops" scheme="http://spoved.org/tags/ops/"/>
+    
+      <category term="docker" scheme="http://spoved.org/tags/docker/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Spring Boot database</title>
     <link href="http://spoved.org/2018/04/27/springboot-database/"/>
     <id>http://spoved.org/2018/04/27/springboot-database/</id>
     <published>2018-04-27T14:34:29.000Z</published>
-    <updated>2018-04-27T15:02:01.062Z</updated>
+    <updated>2018-04-27T15:03:08.285Z</updated>
     
     <summary type="html">
     
