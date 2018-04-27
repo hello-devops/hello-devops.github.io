@@ -8,6 +8,7 @@ tags:
 - ops
 - jenkins
 ---
+![](/images/jenkins/jenkins.png)
 CI(Continuous Integration, 지속적 통합) 서비스를 제공하는 툴.
 
 간단하게 요약하면 클릭 한 번에 유닛 테스트와 배포를 하도록 도와주는 툴입니다.

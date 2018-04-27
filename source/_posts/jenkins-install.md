@@ -8,6 +8,7 @@ tags:
 - ops
 - jenkins
 ---
+![](/images/jenkins/jenkins.png)
 ## JENKINS
 
 {% codeblock %}
