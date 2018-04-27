@@ -1,5 +1,5 @@
 ---
-title: nginx-intro
+title: Nginx?
 date: 2018-04-27 11:30:43
 categories:
 - Ops
