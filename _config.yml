@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: spOveD
-subtitle:
-description:
-keywords:
-author: GyuJung Kim
+title: 스포브(spOveD)
+subtitle: 스포브(spOveD) - 개발 그리고 운영
+description: 개발과 운영에 관한 내용을 정리하는 사이트입니다.
+keywords: spoved, dev, ops, devops
+author:
 language: en
 timezone:
 
