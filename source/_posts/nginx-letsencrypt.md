@@ -126,7 +126,11 @@ nginx config 파일 설정
 {% codeblock %}
     $ sudo systemctl reload nginx
 {% endcodeblock %}
-	
+
+적용 후 사이트에 접속을 해보면 Let's Encypt Authority X3 인증서가 적용된 것을 확인 가능!
+
+![](/images/nginx/letsencrypt.jpg)
+
 ## 인증서 자동 갱신 CRONTAB
 
 {% codeblock %}
