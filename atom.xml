@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>spOveD</title>
+  <title>스포브(spOveD)</title>
   
-  
+  <subtitle>스포브(spOveD) - 개발 그리고 운영</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spoved.org/"/>
   <updated>2018-04-27T17:07:43.800Z</updated>
   <id>http://spoved.org/</id>
-  
-  <author>
-    <name>GyuJung Kim</name>
-    
-  </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
