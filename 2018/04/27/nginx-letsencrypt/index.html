@@ -18,7 +18,7 @@
 <meta property="og:description" content="NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다. Let’s Encrypt CentOS12$ yum install epel-release$ yum install certbot AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://spoved.org/images/nginx/letsencrypt-logo-horizontal.svg">
-<meta property="og:updated_time" content="2018-04-27T18:43:35.605Z">
+<meta property="og:updated_time" content="2018-04-28T04:01:19.518Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NGINX SSL 적용하기 (LetsEncrypt 사용)">
 <meta name="twitter:description" content="NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지고 있는 도메인을 SSL을 통하여 연결하는 방법입니다. Let’s Encrypt CentOS12$ yum install epel-release$ yum install certbot AWS123$ wget https://dl.eff.org/certbot-auto$ chmod a+">
@@ -195,6 +195,8 @@ ga('send', 'pageview');
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  listen 80;</span><br><span class="line">  server_name spoved.org;</span><br><span class="line">  return 301 https://$host$request_uri;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">server &#123;</span><br><span class="line">  listen 443 ssl;</span><br><span class="line">  server_name  spoved.org;</span><br><span class="line">  client_max_body_size 100M;</span><br><span class="line">  ssl_certificate /etc/letsencrypt/live/spoved.org/fullchain.pem;</span><br><span class="line">  ssl_certificate_key /etc/letsencrypt/live/spoved.org/privkey.pem;</span><br><span class="line"></span><br><span class="line">  location / &#123;</span><br><span class="line">    ...</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>성공 하면 nginx 설정 새로 읽어들이도록</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo systemctl reload nginx</span><br></pre></td></tr></table></figure>
+<p>적용 후 사이트에 접속을 해보면 Let’s Encypt Authority X3 인증서가 적용된 것을 확인 가능!</p>
+<p><img src="/images/nginx/letsencrypt.jpg" alt=""></p>
 <h2 id="인증서-자동-갱신-CRONTAB"><a href="#인증서-자동-갱신-CRONTAB" class="headerlink" title="인증서 자동 갱신 CRONTAB"></a>인증서 자동 갱신 CRONTAB</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ crontab -e</span><br><span class="line">0 1 * * * certbot renew</span><br><span class="line">0 1 * * * systemctl reload nginx</span><br></pre></td></tr></table></figure>
         </div>
         <footer class="article-footer">
