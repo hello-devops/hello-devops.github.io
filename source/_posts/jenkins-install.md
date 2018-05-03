@@ -18,10 +18,13 @@ tags:
 {% codeblock %}
     $ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
     $ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
-    $ sudo yum install jenkins
+    $ sudo yum install java jenkins
+	$ sudo service jenkins start
+	$ sudo chkconfig jenkins on
 {% endcodeblock %}
 
 > yum 을 사용하여 설치하면 추후 젠킨스를 업데이트하기 편합니다.
+포트 변경은 /etc/sysconfig/jenkins 에서 JENKINS_PORT="8080" 를 수정하면 됩니다.
 
 [Jenkins wiki
 https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions](https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions)
