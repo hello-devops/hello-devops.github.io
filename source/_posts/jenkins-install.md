@@ -1,5 +1,5 @@
 ---
-title: 젠킨스(Jenkins) 설치
+title: YUM을 사용한 젠킨스(Jenkins) 설치 + GIT, JDK, GRADLE 설치
 date: 2018-04-26 21:13:35
 categories:
 - Ops
@@ -19,8 +19,8 @@ tags:
     $ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
     $ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
     $ sudo yum install java jenkins
-	$ sudo service jenkins start
-	$ sudo chkconfig jenkins on
+    $ sudo service jenkins start
+    $ sudo chkconfig jenkins on
 {% endcodeblock %}
 
 > yum 을 사용하여 설치하면 추후 젠킨스를 업데이트하기 편합니다.
