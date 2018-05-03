@@ -321,11 +321,11 @@
   </entry>
   
   <entry>
-    <title>젠킨스(Jenkins) 설치</title>
+    <title>YUM을 사용한 젠킨스(Jenkins) 설치 + GIT, JDK, GRADLE 설치</title>
     <link href="http://spoved.org/2018/04/26/jenkins-install/"/>
     <id>http://spoved.org/2018/04/26/jenkins-install/</id>
     <published>2018-04-26T12:13:35.000Z</published>
-    <updated>2018-05-03T16:34:34.503Z</updated>
+    <updated>2018-05-03T16:39:11.381Z</updated>
     
     <summary type="html">
     
@@ -335,7 +335,7 @@
         
           &lt;p&gt;&lt;img src=&quot;/images/jenkins/jenkins.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;JENKINS&quot;&gt;&lt;a href=&quot;#JENKINS&quot; class=&quot;headerlink&quot; title=&quot;JENKINS&quot;&gt;&lt;/a&gt;JENKINS&lt;/h2&gt;&lt;p&gt;젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.&lt;br&gt;사용된 환경은 CentOS 7입니다.&lt;/p&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;   $ sudo
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ sudo wget
         
       
     
