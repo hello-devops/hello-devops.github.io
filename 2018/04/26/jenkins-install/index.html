@@ -9,19 +9,19 @@
     
         <meta name="keywords" content="ops,jenkins" />
     
-    <meta name="description" content="JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.사용된 환경은 CentOS 7입니다. 123$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo$ sudo rpm --import https://jenkins-c">
+    <meta name="description" content="JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.사용된 환경은 CentOS 7입니다. 12345   $ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo   $ sudo rpm --import https://j">
 <meta name="keywords" content="ops,jenkins">
 <meta property="og:type" content="article">
 <meta property="og:title" content="젠킨스(Jenkins) 설치">
 <meta property="og:url" content="http://spoved.org/2018/04/26/jenkins-install/index.html">
 <meta property="og:site_name" content="스포브(spOveD)">
-<meta property="og:description" content="JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.사용된 환경은 CentOS 7입니다. 123$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo$ sudo rpm --import https://jenkins-c">
+<meta property="og:description" content="JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.사용된 환경은 CentOS 7입니다. 12345   $ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo   $ sudo rpm --import https://j">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://spoved.org/images/jenkins/jenkins.png">
-<meta property="og:updated_time" content="2018-04-27T18:36:51.090Z">
+<meta property="og:updated_time" content="2018-05-03T16:34:34.503Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="젠킨스(Jenkins) 설치">
-<meta name="twitter:description" content="JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.사용된 환경은 CentOS 7입니다. 123$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo$ sudo rpm --import https://jenkins-c">
+<meta name="twitter:description" content="JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.사용된 환경은 CentOS 7입니다. 12345   $ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo   $ sudo rpm --import https://j">
 <meta name="twitter:image" content="http://spoved.org/images/jenkins/jenkins.png">
     
 
@@ -184,9 +184,9 @@ ga('send', 'pageview');
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/images/jenkins/jenkins.png" alt=""></p>
 <h2 id="JENKINS"><a href="#JENKINS" class="headerlink" title="JENKINS"></a>JENKINS</h2><p>젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.<br>사용된 환경은 CentOS 7입니다.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo</span><br><span class="line">$ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key</span><br><span class="line">$ sudo yum install jenkins</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">   $ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo</span><br><span class="line">   $ sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key</span><br><span class="line">   $ sudo yum install java jenkins</span><br><span class="line">$ sudo service jenkins start</span><br><span class="line">$ sudo chkconfig jenkins on</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>yum 을 사용하여 설치하면 추후 젠킨스를 업데이트하기 편합니다.</p>
+<p>yum 을 사용하여 설치하면 추후 젠킨스를 업데이트하기 편합니다.<br>포트 변경은 /etc/sysconfig/jenkins 에서 JENKINS_PORT=”8080” 를 수정하면 됩니다.</p>
 </blockquote>
 <p><a href="https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions" target="_blank" rel="noopener">Jenkins wiki<br>https://wiki.jenkins.io/display/JENKINS/Installing+Jenkins+on+Red+Hat+distributions</a></p>
 <h2 id="GIT"><a href="#GIT" class="headerlink" title="GIT"></a>GIT</h2><p>yum 사용<br>이 경우는 보통 구버전의 git이 설치됩니다.</p>
@@ -209,7 +209,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://spoved.org/2018/04/26/jenkins-install/" data-id="cjgian1060004vwvzteomhupe" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://spoved.org/2018/04/26/jenkins-install/" data-id="cjgqr7cin0000movz6h2kdjeu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
