@@ -31,38 +31,6 @@ NGINX에서 무료 SSL 중 가장 유명한 LetsEncrypt를 사용하여 가지�
     $ ./certbot-auto --debug
 {% endcodeblock %}
 	
-## letsencrypt.ini
-
-{% codeblock %}
-    $ cat <<EOT >> letsencrypt-config/ssl.ini
-    # This is an example of the kind of things you can do in a configuration file.
-    # All flags used by the client can be configured here. Run Certbot with
-    # "--help" to learn more about the available options.
-    
-    # Use a 4096 bit RSA key instead of 2048
-    rsa-key-size = 4096
-    
-    # Uncomment and update to register with the specified e-mail address
-    email = 
-    
-    # Uncomment and update to generate certificates for the specified
-    # domains.
-    domains = 
-    
-    # Uncomment to use a text interface instead of ncurses
-    # text = True
-    
-    # Uncomment to use the standalone authenticator on port 443
-    # authenticator = standalone
-    # standalone-supported-challenges = tls-sni-01
-    
-    # Uncomment to use the webroot authenticator. Replace webroot-path with the
-    # path to the public_html / webroot folder being served by your web server.
-    authenticator = webroot
-    webroot-path = /usr/share/nginx/html
-    EOT
-{% endcodeblock %}
-	
 ## 도메인 설정
 
 사용하는 네임서버를 통하여 서버와 도메인 연결
@@ -91,6 +59,38 @@ firewall 기준
     $ firewall-cmd --reload
 {% endcodeblock %}
 	
+## letsencrypt.ini
+
+{% codeblock %}
+    $ cat <<EOT >> letsencrypt-config/ssl.ini
+    # This is an example of the kind of things you can do in a configuration file.
+    # All flags used by the client can be configured here. Run Certbot with
+    # "--help" to learn more about the available options.
+    
+    # Use a 4096 bit RSA key instead of 2048
+    rsa-key-size = 4096
+    
+    # Uncomment and update to register with the specified e-mail address
+    email = pandora@crazyguys.me
+    
+    # Uncomment and update to generate certificates for the specified
+    # domains.
+    domains = spoved.org, www.spoved.org
+    
+    # Uncomment to use a text interface instead of ncurses
+    # text = True
+    
+    # Uncomment to use the standalone authenticator on port 443
+    # authenticator = standalone
+    # standalone-supported-challenges = tls-sni-01
+    
+    # Uncomment to use the webroot authenticator. Replace webroot-path with the
+    # path to the public_html / webroot folder being served by your web server.
+    authenticator = webroot
+    webroot-path = /usr/share/nginx/html
+    EOT
+{% endcodeblock %}
+	
 ## 실제 SSL 적용
 
 {% codeblock %}
@@ -111,12 +111,12 @@ nginx config 파일 설정
     server {
       listen 443 ssl;
       server_name  spoved.org;
-      client_max_body_size 100M;
       ssl_certificate /etc/letsencrypt/live/spoved.org/fullchain.pem;
       ssl_certificate_key /etc/letsencrypt/live/spoved.org/privkey.pem;
     
       location / {
-        ...
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
       }
     }
 {% endcodeblock %}
