@@ -23,7 +23,7 @@ NGINX를 이용하여 프록시 설정을 하는 방법입니다.
     
     server {
       listen 80;
-      server_name ;
+      server_name spoved.org;
       location / {
         proxy_set_header Host \$http_host;
         proxy_set_header X-Real-IP \$remote_addr;
@@ -45,15 +45,15 @@ server_name은 내용은 상황에 맞게
     
     server {
       listen 80;
-      server_name ;
+      server_name spoved.org;
       return 301 https://\$host\$request_uri;
     }
     
     server {
       listen 443 ssl;
-      server_name ;
-      ssl_certificate /etc/letsencrypt/live//fullchain.pem;
-      ssl_certificate_key /etc/letsencrypt/live//privkey.pem;
+      server_name spoved.org;
+      ssl_certificate /etc/letsencrypt/live/spoved.org/fullchain.pem;
+      ssl_certificate_key /etc/letsencrypt/live/spoved.org/privkey.pem;
     
       location / {
         proxy_set_header Host \$http_host;
@@ -65,6 +65,7 @@ server_name은 내용은 상황에 맞게
 {% endcodeblock %}
 
 server_name과 ssl_certificate 내용은 상황에 맞게
+위 예제는 spoved.org로 설정하는 경우의 예제입니다.
 
 [공식 문서](https://docs.nginx.com/nginx/admin-guide/web-server/reverse-proxy/)
 
