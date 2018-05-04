@@ -25,9 +25,9 @@ NGINX를 이용하여 프록시 설정을 하는 방법입니다.
       listen 80;
       server_name spoved.org;
       location / {
-        proxy_set_header Host \$http_host;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_pass http://backend;
       }
     }
@@ -56,9 +56,9 @@ server_name은 내용은 상황에 맞게
       ssl_certificate_key /etc/letsencrypt/live/spoved.org/privkey.pem;
     
       location / {
-        proxy_set_header Host \$http_host;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_pass http://backend;
       }
     }
