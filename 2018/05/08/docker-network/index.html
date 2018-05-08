@@ -3,21 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>스포브(spOveD)</title>
+    <title>도커(Docker) 네트워크 | 스포브(spOveD)</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="개발과 운영에 관한 내용을 정리하는 사이트입니다.">
-<meta name="keywords" content="spoved, dev, ops, devops">
-<meta property="og:type" content="website">
-<meta property="og:title" content="스포브(spOveD)">
-<meta property="og:url" content="http://spoved.org/page/2/index.html">
+        <meta name="keywords" content="ops,docker" />
+    
+    <meta name="description" content="Docker network도커 내부 간의 통신을 위한 네트워크입니다.네트워크를 따로 설정 안 해줘도 컨테이너의 IP를 통해 서로 통신할 수 있지만 네트워크를 사용하는 경우는 automatic service discovery 라는 기능으로 컨테이너의 이름을 사용할 수 있습니다.  On user-defined networks like alpine-net, co">
+<meta name="keywords" content="ops,docker">
+<meta property="og:type" content="article">
+<meta property="og:title" content="도커(Docker) 네트워크">
+<meta property="og:url" content="http://spoved.org/2018/05/08/docker-network/index.html">
 <meta property="og:site_name" content="스포브(spOveD)">
-<meta property="og:description" content="개발과 운영에 관한 내용을 정리하는 사이트입니다.">
+<meta property="og:description" content="Docker network도커 내부 간의 통신을 위한 네트워크입니다.네트워크를 따로 설정 안 해줘도 컨테이너의 IP를 통해 서로 통신할 수 있지만 네트워크를 사용하는 경우는 automatic service discovery 라는 기능으로 컨테이너의 이름을 사용할 수 있습니다.  On user-defined networks like alpine-net, co">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-05-08T05:40:43.280Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="스포브(spOveD)">
-<meta name="twitter:description" content="개발과 운영에 관한 내용을 정리하는 사이트입니다.">
+<meta name="twitter:title" content="도커(Docker) 네트워크">
+<meta name="twitter:description" content="Docker network도커 내부 간의 통신을 위한 네트워크입니다.네트워크를 따로 설정 안 해줘도 컨테이너의 IP를 통해 서로 통신할 수 있지만 네트워크를 사용하는 경우는 automatic service discovery 라는 기능으로 컨테이너의 이름을 사용할 수 있습니다.  On user-defined networks like alpine-net, co">
     
 
     
@@ -141,182 +144,132 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <em class="page-title-link" data-url="home">Home</em>
+    <a class="page-title-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Ops/Docker/">Docker</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-docker-network" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2018" class="archive-year"><i class="icon fa fa-calendar-o"></i>2018</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2018/04/26/jenkins-install/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/jenkins/jenkins.png)" alt="YUM을 사용한 젠킨스(Jenkins) 설치 + GIT, JDK, GRADLE 설치" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://spoved.org/2018/04/26/jenkins-install/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Jenkins/">Jenkins</a>
-            </div>
-            <div class="date"><time datetime="2018-04-26T12:13:35.000Z" itemprop="datePublished">2018-04-26</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/26/jenkins-install/">YUM을 사용한 젠킨스(Jenkins) 설치 + GIT, JDK, GRADLE 설치</a>
+        도커(Docker) 네트워크
         </h1>
     
 
-        <p class="article-excerpt">
-            
-JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니다.사용된 환경은 CentOS 7입니다.
-12345$ sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo$ sudo rpm --import https://jenkins
-        </p>
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2018/05/08/docker-network/" class="article-date">
+            <time datetime="2018-05-08T05:26:59.000Z" itemprop="datePublished">2018-05-08</time>
+        </a>
     </div>
-</article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2018/04/26/jenkins-intro/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/jenkins/jenkins.png)" alt="젠킨스(Jenkins)" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://spoved.org/2018/04/26/jenkins-intro/">0</span>
-    
-</span>
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/docker/">docker</a>, <a class="tag-link" href="/tags/ops/">ops</a>
+    </div>
 
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/Ops/">Ops</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Ops/Jenkins/">Jenkins</a>
             </div>
-            <div class="date"><time datetime="2018-04-26T12:00:10.000Z" itemprop="datePublished">2018-04-26</time></div>
-        </div>
         
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/26/jenkins-intro/">젠킨스(Jenkins)</a>
-        </h1>
-    
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="Docker-network"><a href="#Docker-network" class="headerlink" title="Docker network"></a>Docker network</h2><p>도커 내부 간의 통신을 위한 네트워크입니다.<br>네트워크를 따로 설정 안 해줘도 컨테이너의 IP를 통해 서로 통신할 수 있지만 네트워크를 사용하는 경우는 <strong>automatic service discovery</strong> 라는 기능으로 컨테이너의 이름을 사용할 수 있습니다.</p>
+<blockquote>
+<p>On user-defined networks like <code>alpine-net</code>, containers can not only<br>communicate by IP address, but can also resolve a container name to an<br>IP address. This capability is called <strong>automatic service discovery</strong>.<br>Let’s connect to <code>alpine1</code> and test this out. <code>alpine1</code>should be able<br>to resolve <code>alpine2</code> and <code>alpine4</code> (and <code>alpine1</code>, itself) to IP<br>addresses.</p>
+</blockquote>
+<p>네트워크를 사용한 예제입니다.</p>
+<p>docker network create main-net</p>
+<p>이렇게 네트워크를 만들고</p>
+<p>docker run –restart always -d –network main-net –name redis -v /data/redis:/data -p 6379:6379 redis redis-server /data/redis.conf</p>
+<p>예를 들어 redis를 redis라는 이름의 컨테이너로 main-net이라는 네트워크에 올리면 나중에 같은 네트워크를 사용하는 컨테이너에서는 redis:6379로 레디스에 접근할 수 있게 됩니다.</p>
+<p><a href="https://docs.docker.com/network/network-tutorial-standalone/#use-user-defined-bridge-networks" target="_blank" rel="noopener">Docker docs</a></p>
 
-        <p class="article-excerpt">
-            CI(Continuous Integration, 지속적 통합) 서비스를 제공하는 툴.
-간단하게 요약하면 클릭 한 번에 유닛 테스트와 배포를 하도록 도와주는 툴입니다.사람이 직접 배포하면 실수의 귀찮고 위험도 있는데 이런 번거로움을 없애주는 고마운 툴이죠.
-젠킨스 공식 홈페이지https://jenkins.io/
+        </div>
+        <footer class="article-footer">
+            
 
-        </p>
+
+
+    <a data-url="http://spoved.org/2018/05/08/docker-network/" data-id="cjgx8wywu0001fwvz1d1ouzcu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
-    
-        </div>
-    
 
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2018/04/26/spoved/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/spoved/logo.png)" alt="스포브(spOveD)" class="thumbnail-image"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://spoved.org/2018/04/26/spoved/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2018-04-26T11:47:09.524Z" itemprop="datePublished">2018-04-26</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2018/04/26/spoved/">스포브(spOveD)</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-스포브(spOveD)는 DevOps를 뒤집어 놓은 단어입니다.
-개발과 운영에 관한 내용을 정리하려고 만든 사이트입니다.보시다 궁금한 내용은 댓글 달아 주시면 아는 내에서 답해드리겠습니다.
-
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
+
     
-        </div>
-    
-
-
-    </div></section>
-
-
-    <nav id="page-nav">
-        <span class="pages">Page 2 of 2</span>
-        <a class="extend prev" rel="prev" href="/">&laquo;</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </nav>
+    </section>
 
 
                         </div>
@@ -345,6 +298,19 @@ JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2018/04/28/go-dockerfile/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">GO Dockerfile</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -544,11 +510,13 @@ JENKINS젠킨스 설치방법 및 Git, JDK, Gradle 세팅에 대한 설명입니
     var disqus_shortname = 'spoved';
     
     
+    var disqus_url = 'http://spoved.org/2018/05/08/docker-network/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>

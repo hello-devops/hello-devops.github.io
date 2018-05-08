@@ -6,10 +6,42 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://spoved.org/"/>
-  <updated>2018-04-27T17:07:43.800Z</updated>
+  <updated>2018-05-08T05:40:43.280Z</updated>
   <id>http://spoved.org/</id>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>도커(Docker) 네트워크</title>
+    <link href="http://spoved.org/2018/05/08/docker-network/"/>
+    <id>http://spoved.org/2018/05/08/docker-network/</id>
+    <published>2018-05-08T05:26:59.000Z</published>
+    <updated>2018-05-08T05:40:43.280Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Docker-network&quot;&gt;&lt;a href=&quot;#Docker-network&quot; class=&quot;headerlink&quot; title=&quot;Docker network&quot;&gt;&lt;/a&gt;Docker network&lt;/h2&gt;&lt;p&gt;도커 내부 간의 통신을 위한 네트워크입니다.&lt;br&gt;네트워크를 따로 설정 안 해줘도 컨테이너의 IP를 통해 서로 통신할 수 있지만 네트워크를 사용하는 경우는 &lt;strong&gt;automatic service discovery&lt;/strong&gt; 라는 기능으로 컨테이너의 이름을 사용할 수 있습니다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;On user-defined networks like &lt;code&gt;alpine-net&lt;/code&gt;, containers can not only&lt;br&gt;communicate by IP address, but can also resolve a container name to an&lt;br&gt;IP address. This capability is called
+        
+      
+    
+    </summary>
+    
+      <category term="Ops" scheme="http://spoved.org/categories/Ops/"/>
+    
+      <category term="Docker" scheme="http://spoved.org/categories/Ops/Docker/"/>
+    
+    
+      <category term="ops" scheme="http://spoved.org/tags/ops/"/>
+    
+      <category term="docker" scheme="http://spoved.org/tags/docker/"/>
+    
+  </entry>
   
   <entry>
     <title>GO Dockerfile</title>
